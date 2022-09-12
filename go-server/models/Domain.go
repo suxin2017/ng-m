@@ -2,7 +2,11 @@ package models
 
 type Domain struct {
 	CommonModel
-	Domain string
-	Desc   string
-	Users  []*User `gorm:"many2many:user_domain;"`
+	Domain        string `validate:"required" json:"domain,omitempty"`
+	Desc          string `json:"desc,omitempty"`
+	CreatedUserID uint
+	CreatedUser   User
+	UpdatedUserId uint
+	UpdatedUser   User
+	Users         []*User `gorm:"many2many:user_domain;" json:"users,omitempty"`
 }

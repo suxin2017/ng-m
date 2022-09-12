@@ -94,34 +94,39 @@ type AddUserDomaianBody struct {
 }
 
 func AddUserDomaian(c *gin.Context) {
-	// TODO 权限
-	// user, exist := c.Get("currentUser")
-
 	var addBody AddUserDomaianBody
 	if c.ShouldBind(&addBody) == nil {
-		var targetUser models.User
-		var targetDomain models.Domain
-		if models.DB.Preload("Domain").First(&targetUser, addBody.UserId).Error != nil {
-			c.Error(fmt.Errorf("用户不存在"))
+		shouldReturn := AddDomainByAddBody(addBody, c)
+		if shouldReturn {
 			return
 		}
-		if models.DB.First(&targetDomain, addBody.DomainId).Error != nil {
-			c.Error(fmt.Errorf("域名不存在"))
-			return
-		}
-
-		var existsDomain models.Domain
-		models.DB.Model(&targetUser).Where("domains.id = ?", addBody.DomainId).Association("Domain").Find(&existsDomain)
-
-		if existsDomain.ID == 0 {
-			if err := models.DB.Model(&targetUser).Association("Domain").Append(&targetDomain); err != nil {
-				log.Fatalln(err.Error())
-				c.Error(fmt.Errorf("添加绑定失败"))
-				return
-			}
-		}
-		c.JSON(200, utils.OkMessage())
 
 	}
 
+}
+
+func AddDomainByAddBody(addBody AddUserDomaianBody, c *gin.Context) bool {
+	var targetUser models.User
+	var targetDomain models.Domain
+	if models.DB.Preload("Domain").First(&targetUser, addBody.UserId).Error != nil {
+		c.Error(fmt.Errorf("用户不存在"))
+		return true
+	}
+	if models.DB.First(&targetDomain, addBody.DomainId).Error != nil {
+		c.Error(fmt.Errorf("域名不存在"))
+		return true
+	}
+
+	var existsDomain models.Domain
+	models.DB.Model(&targetUser).Where("domains.id = ?", addBody.DomainId).Association("Domain").Find(&existsDomain)
+
+	if existsDomain.ID == 0 {
+		if err := models.DB.Model(&targetUser).Association("Domain").Append(&targetDomain); err != nil {
+			log.Fatalln(err.Error())
+			c.Error(fmt.Errorf("添加绑定失败"))
+			return true
+		}
+	}
+	c.JSON(200, utils.OkMessage())
+	return false
 }

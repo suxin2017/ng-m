@@ -29,6 +29,3 @@ func GetUserAndDomainById(id uint) (User, error) {
 	err := DB.Model(&User{}).Preload("Domain").First(&user, id).Error
 	return user, err
 }
-
-func AddDomainToUser(domain Domain, userId uint) {
-}

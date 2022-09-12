@@ -71,7 +71,11 @@ const routeMatched = computed(() => route.matched.slice(1));
             <router-view v-if="route.matched.length === 3">
               <router-view></router-view>
             </router-view>
-            <router-view v-else></router-view>
+            <router-view v-slot="{ Component, route }" v-else>
+              <transition name="fade" mode="out-in">
+                <component :is="Component" />
+              </transition>
+            </router-view>
           </el-col>
         </el-row>
       </el-main>
@@ -107,5 +111,18 @@ const routeMatched = computed(() => route.matched.slice(1));
 }
 .el-menu-item.is-active {
   background-color: #e6f7ff;
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-leave {
+  opacity: 1;
+}
+.fade-enter-active {
+  transition: opacity 0.2s;
+}
+.fade-leave-active {
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 </style>

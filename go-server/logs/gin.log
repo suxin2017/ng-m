@@ -12,6 +12,7 @@
 [GIN-debug] POST   /api/user/delete          --> suxin2017.com/server/controller.DeleteUser (5 handlers)
 [GIN-debug] GET    /api/user/list            --> suxin2017.com/server/controller.UserList (5 handlers)
 [GIN-debug] GET    /api/term                 --> suxin2017.com/server/controller.HandleTerm (5 handlers)
+[GIN-debug] GET    /api/domain/list          --> suxin2017.com/server/controller.GetDominListWithLoginUser (5 handlers)
 [GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
 [GIN-debug] Listening and serving HTTP on :8081

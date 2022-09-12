@@ -31,8 +31,8 @@
   </div>
 </template>
 <script setup>
-import { useMounted } from "@vueuse/core";
 import { domainListUseGet } from "@/api/domain";
+import { onMounted } from "vue";
 const tableData = [
   {
     id: "2016-05-03",
@@ -42,7 +42,7 @@ const tableData = [
     updatedAt: "No. 189, Grove St, Los Angeles",
   },
 ];
-useMounted(async () => {
+onMounted(async () => {
   domainListUseGet();
 });
 </script>

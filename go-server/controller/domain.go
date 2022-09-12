@@ -15,11 +15,24 @@ func GetDominListWithLoginUser(c *gin.Context) {
 		var domains []models.Domain
 		DBPageChain(models.DB.Model(&user), pageParam).Order("created_at desc").Association("domain").Find(&domains)
 
-		var total int64
-		models.DB.Model(&models.Domain{}).Count(&total)
+		total := models.DB.Model(&user).Association("domain").Count()
 		c.JSON(200, utils.Ok(gin.H{
 			"total": total,
 			"data":  domains,
 		}))
 	}
+}
+
+type AddDomainByUserData struct {
+	models.Domain
+}
+
+func AddDomainByUser(c *gin.Context) {
+	// user, exist := c.Get("currentUser")
+	// var addDomainByUserData AddDomainByUserData
+	// if c.ShouldBind(&addDomainByUserData) != nil && exist {
+
+	// AddDomainByAddBody(AddUserDomaianBody{UserId: user.(*models.User).ID})
+	// }
+
 }

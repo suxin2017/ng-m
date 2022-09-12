@@ -22,13 +22,13 @@ func ConnectDatabase() {
 	var err error
 	databasePath := GetDatabasePath()
 	DB, err = gorm.Open(sqlite.Open(databasePath), &gorm.Config{
-		Logger: logger.Default.LogMode(logger.Info),
+		Logger: logger.Default.LogMode(logger.Warn),
 	})
 
 	if err != nil {
 		panic("Failed to connect to database!")
 	}
-	DB.AutoMigrate(Domain{})
-	DB.AutoMigrate(User{})
+	DB.AutoMigrate(&Domain{})
+	DB.AutoMigrate(&User{})
 
 }
