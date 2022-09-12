@@ -1,0 +1,17 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/ping                 --> main.setupRouter.func1 (5 handlers)
+[GIN-debug] POST   /api/login                --> suxin2017.com/server/controller.HandleLogin (5 handlers)
+[GIN-debug] GET    /api/user/info            --> suxin2017.com/server/controller.CurrentUser (5 handlers)
+[GIN-debug] POST   /api/user/addDomain       --> suxin2017.com/server/controller.AddUserDomaian (5 handlers)
+[GIN-debug] POST   /api/user/add             --> suxin2017.com/server/controller.AddUser (5 handlers)
+[GIN-debug] POST   /api/user/delete          --> suxin2017.com/server/controller.DeleteUser (5 handlers)
+[GIN-debug] GET    /api/user/list            --> suxin2017.com/server/controller.UserList (5 handlers)
+[GIN-debug] GET    /api/term                 --> suxin2017.com/server/controller.HandleTerm (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8081

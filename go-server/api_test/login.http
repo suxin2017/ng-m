@@ -1,0 +1,7 @@
+POST http://localhost:8081/admin
+content-type: application/json
+Authorization: Basic Zm9vOmJhcg==
+
+{
+    "value":"abc"
+}
