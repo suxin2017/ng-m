@@ -5,5 +5,9 @@ export function formatTime(row, column) {
   if (date == undefined) {
     return "";
   }
-  return moment(date).format("YYYY-MM-DD HH:mm:ss");
+  return formatDate(date);
 }
+
+export const formatDate = (date) => {
+  return moment(date).format("YYYY-MM-DD HH:mm:ss");
+};

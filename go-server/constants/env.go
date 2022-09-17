@@ -50,3 +50,7 @@ func InitNotExistDir(dirPath string) {
 		os.MkdirAll(dirPath, 0750)
 	}
 }
+
+func IsDev() bool {
+	return os.Getenv("ENV") == "development"
+}

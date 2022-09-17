@@ -11,3 +11,11 @@ export async function currentDomainUseGet() {
 export async function domainListUseGet(params) {
   return await r.get("/domain/list", { params });
 }
+
+export async function addDomain(data) {
+  return await r.post("/domain/add", data);
+}
+
+export async function infoDomain(id) {
+  return await r.get("/domain/info", { params: { id } });
+}

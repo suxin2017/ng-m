@@ -14,7 +14,6 @@ r.interceptors.request.use((config) => {
 
 r.interceptors.response.use(
   (response) => {
-    console.log(response);
     if (response.data.code === 1) {
       return Promise.resolve(response.data.data);
     } else {

@@ -1,2 +1,2 @@
 dev:
-	nodemon --exec go run main.go --signal SIGTERM
+	ENV=development nodemon --exec go run main.go --signal SIGTERM

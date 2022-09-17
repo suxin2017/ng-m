@@ -46,7 +46,6 @@ func setupRouter() *gin.Engine {
 	api.POST("/login", controller.HandleLogin)
 	userRouter := api.Group("/user")
 	userRouter.GET("/info", controller.CurrentUser)
-	userRouter.POST("/addDomain", controller.AddUserDomaian)
 	userRouter.POST("/add", controller.AddUser)
 	userRouter.POST("/delete", controller.DeleteUser)
 	userRouter.GET("/list", controller.UserList)
@@ -55,6 +54,8 @@ func setupRouter() *gin.Engine {
 
 	domainRouter := api.Group("/domain")
 	domainRouter.GET("/list", controller.GetDominListWithLoginUser)
+	domainRouter.POST("/add", controller.AddDomainByUser)
+	domainRouter.GET("/info", controller.GetDomainById)
 	return r
 }
 
