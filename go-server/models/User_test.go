@@ -17,7 +17,7 @@ func TestAddUserAndDomains(t *testing.T) {
 		Name:     "jinzhu",
 		Password: "123",
 		Email:    "fff",
-		Avater:   "ddd",
+		Avatar:   "ddd",
 		Domain: []Domain{
 			{
 				CommonModel: CommonModel{

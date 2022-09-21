@@ -36,7 +36,7 @@
         </el-row>
       </el-col>
     </el-row>
-    <UserModal ref="usermodal" />
+    <UserModal ref="usermodal" @ok="getList" />
   </div>
 </template>
 <script setup>
@@ -50,11 +50,12 @@ const usermodal = ref(null);
 const openModal = () => {
   usermodal.value.openModal();
 };
-onMounted(async () => {
+const getList = async () => {
   const { data, total } = await userListUseGet({ pageNum: 0, pageSize: 15 });
   tableData.data = data;
   tableData.total = total;
-});
+};
+onMounted(getList);
 </script>
 
 <style></style>

@@ -2,8 +2,9 @@
 import { useGlobalUserState } from "@/api/user";
 import { adminRoutes } from "@/router";
 import { ref, computed } from "vue";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 const { user } = useGlobalUserState();
+const router = useRouter();
 const route = useRoute();
 const activeIndex = ref(
   adminRoutes.map((item) => item.path).find((item) => route.path.includes(item))
@@ -13,6 +14,13 @@ const handleSelect = (index) => {
 };
 console.log(route.matched);
 const routeMatched = computed(() => route.matched.slice(1));
+const logout = () => {
+  localStorage.removeItem("token");
+  router.push({
+    path: "/login",
+    query: { rediect: route.fullPath },
+  });
+};
 </script>
 
 <template>
@@ -25,18 +33,16 @@ const routeMatched = computed(() => route.matched.slice(1));
         <el-col span="12">
           <el-dropdown>
             <el-row :gutter="12" align="middle" class="user-box">
-              <el-col :span="12">
-                <el-avatar size="small" :src="user.avatar"></el-avatar>
-              </el-col>
-              <el-col :span="12">
-                <span>
-                  {{ user.name }}
-                </span>
-              </el-col> </el-row
-            >\
+              <el-avatar size="small" :src="user.avatar"></el-avatar>
+              <span style="margin-left: 16px">
+                {{ user.name }}
+              </span>
+            </el-row>
             <template #dropdown>
               <el-dropdown-menu>
-                <el-dropdown-item> 退出登录</el-dropdown-item></el-dropdown-menu
+                <el-dropdown-item @click="logout">
+                  退出登录</el-dropdown-item
+                ></el-dropdown-menu
               >
             </template>
           </el-dropdown>

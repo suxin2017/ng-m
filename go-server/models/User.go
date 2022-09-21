@@ -12,7 +12,7 @@ type User struct {
 	Name     string   `json:"name,omitempty" validate:"required"`
 	Email    string   `json:"email,omitempty" validate:"required"`
 	Password string   `json:"password,omitempty" validate:"required"`
-	Avater   string   `json:"avater,omitempty"`
+	Avatar   string   `json:"avatar,omitempty"`
 	Domain   []Domain `gorm:"many2many:user_domain;"`
 }
 

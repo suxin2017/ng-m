@@ -2,8 +2,12 @@ package controller
 
 import (
 	"fmt"
+	"io/ioutil"
+	"log"
+	"path"
 
 	"github.com/gin-gonic/gin"
+	"suxin2017.com/server/constants"
 	"suxin2017.com/server/models"
 	"suxin2017.com/server/utils"
 )
@@ -44,7 +48,6 @@ type GetDomainByIdParams struct {
 func GetDomainById(c *gin.Context) {
 	var domainId GetDomainByIdParams
 	c.ShouldBind(&domainId)
-	utils.DebugLog(domainId)
 	if domainId.ID > 0 {
 		var domain models.Domain
 
@@ -95,7 +98,10 @@ func addDomainByAddBody(c *gin.Context, addBody models.Domain, user *models.User
 		targetDomain.UpdatedUserId = user.ID
 		targetDomain.Desc = addBody.Desc
 		targetDomain.Domain = addBody.Domain
-		models.DB.Model(&targetDomain).Updates(targetDomain)
+		if models.DB.Model(&targetDomain).Updates(targetDomain).RowsAffected == 0 {
+			log.Println("没更新成功")
+
+		}
 
 	} else {
 		// 新增域名
@@ -105,8 +111,56 @@ func addDomainByAddBody(c *gin.Context, addBody models.Domain, user *models.User
 		targetDomain.Domain = addBody.Domain
 		targetDomain.Users = []models.User{*user}
 		models.DB.Create(&targetDomain)
+		log.Println("init domain resource directory")
+		constants.InitNotExistDir(constants.GetNginxDomainResourceDir(targetDomain.ID))
+	}
+	c.JSON(200, utils.OkMessage())
+
+}
+
+type GetDomainResourcePathParams struct {
+	ID   uint   `json:"id,omitempty" form:"id"`
+	Path string `json:"path,omitempty" form:"path"`
+}
+
+func GetDomainResourcePath(c *gin.Context) {
+	var params GetDomainResourcePathParams
+	if err := c.ShouldBind(&params); err == nil {
+		if params.ID == 0 {
+			c.Error(fmt.Errorf("id is required"))
+			c.Abort()
+			return
+		}
+
+		basePath := constants.GetNginxDomainResourceDir(params.ID)
+		fileList := GetFileTreeFromDir(path.Join(basePath, params.Path))
+		c.JSON(200, utils.Ok(fileList))
+
+	} else {
+		c.Error(fmt.Errorf("something is error"))
+		c.Abort()
+		return
 	}
 
-	c.JSON(200, utils.OkMessage())
+}
+
+type FileNode struct {
+	Path  string `json:"path,omitempty"`
+	Size  int64  `json:"size,omitempty"`
+	IsDir bool   `json:"isDir,omitempty"`
+}
+
+func GetFileTreeFromDir(dirPath string) []FileNode {
+	fileRoot := []FileNode{}
+	paths, _ := ioutil.ReadDir(dirPath)
+	for _, path := range paths {
+		fileRoot = append(fileRoot, FileNode{
+			Path:  path.Name(),
+			Size:  path.Size(),
+			IsDir: path.IsDir(),
+		})
+	}
+
+	return fileRoot
 
 }

@@ -1,5 +1,5 @@
 <template>
-  <el-dialog v-model="dialogVisible" title="新建账户">
+  <el-dialog v-model="dialogVisible" title="路径">
     <el-form
       ref="formRef"
       :label-position="labelPosition"
@@ -7,38 +7,26 @@
       :model="formModal"
       style="max-width: 460px"
     >
-      <el-form-item label="头像">
-        <el-avatar :src="formModal.avatar"></el-avatar>
-      </el-form-item>
       <el-form-item
-        label="用户名"
-        prop="name"
+        label="路径"
+        prop="path"
         :rules="[{ required: true, message: '请填写字段' }]"
       >
-        <el-input v-model="formModal.name" />
+        <el-input v-model="formModal.path" />
       </el-form-item>
-      <el-form-item
-        label="邮箱"
-        prop="email"
-        :rules="[
-          { required: true, message: '请填写字段' },
-          {
-            type: 'email',
-            message: '请填写正确邮箱',
-          },
-        ]"
-      >
-        <el-input v-model="formModal.email" />
+      <el-form-item label="匹配规则" prop="matchRule">
+        <el-input v-model="formModal.matchRule" />
       </el-form-item>
-      <el-form-item
-        label="密码"
-        prop="password"
-        :rules="[{ required: true, message: '请填写字段' }]"
-      >
-        <el-input v-model="formModal.password" show-password />
-      </el-form-item>
-      <el-form-item label="二次确认" prop="password2" :rules="passwordRule">
-        <el-input v-model="formModal.password2" show-password />
+      <el-form-item>
+        <div>
+          <div>~ 正则匹配，区分大小写</div>
+          <div>~* 正则匹配，不区分大小写</div>
+          <div>
+            ^~
+            普通字符匹配，如果该选项匹配，则，只匹配改选项，不再向下匹配其他选项
+          </div>
+          <div>= 普通字符匹配，精确匹配</div>
+        </div>
       </el-form-item>
 
       <el-form-item>
@@ -50,30 +38,27 @@
 </template>
 
 <script setup>
-import { userAdd } from "@/api/user";
+import { addPath } from "@/api/domain";
 import { ref, reactive } from "vue";
+import { useRoute } from "vue-router";
 const formRef = ref();
-const emit = defineEmits(["ok"]);
 const formModal = reactive({
-  name: "",
-  password: "",
-  // type: "",
-  password2: "",
-  avatar: `https://api.multiavatar.com/${Date.now()}.svg`,
+  path: "/",
+  matchRule: "",
 });
 const dialogVisible = ref(false);
+const route = useRoute();
 const submitForm = async (formEl) => {
   if (!formEl) return;
-  await formEl.validate(async (valid, fields) => {
+  await formEl.validate((valid, fields) => {
     if (valid) {
-      await userAdd(formModal);
-      emit("ok");
+      addPath({ domainId: +route.params["id"], ...formModal });
+      console.log(formModal);
       console.log("submit!");
     } else {
       console.log("error submit!", fields);
     }
   });
-  console.log("========");
 };
 const resetForm = (formEl) => {
   if (!formEl) return;
@@ -88,9 +73,8 @@ const passwordRule = reactive([
   {
     validator: (rule, value, cb) => {
       if (value !== formModal.password) {
+        console.log(value, "=========");
         cb(new Error("两次密码输入不一致"));
-      } else {
-        cb();
       }
     },
   },

@@ -15,6 +15,11 @@ r.interceptors.request.use((config) => {
 r.interceptors.response.use(
   (response) => {
     if (response.data.code === 1) {
+      if (!response.data.data) {
+        ElMessage.success({
+          message: response.data.message,
+        });
+      }
       return Promise.resolve(response.data.data);
     } else {
       ElMessage.error({

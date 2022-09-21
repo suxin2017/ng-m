@@ -5,6 +5,7 @@ import (
 	"os"
 	"path"
 	"runtime"
+	"strconv"
 )
 
 func GetProjectRoot() string {
@@ -37,6 +38,10 @@ func GetNginxConfigDir() string {
 
 func GetNginxDomainConfigDir() string {
 	return path.Join(GetNginxConfigDir(), "demoain")
+}
+
+func GetNginxDomainResourceDir(domainId uint) string {
+	return path.Join(GetNginxDomainConfigDir(), strconv.FormatUint(uint64(domainId), 16))
 }
 
 func InitEnvDir() {

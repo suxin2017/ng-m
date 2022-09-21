@@ -53,6 +53,7 @@ func AddUser(c *gin.Context) {
 	if c.ShouldBind(&user) == nil {
 		if err := utils.CheckStruct(user); err != nil {
 			c.Error(err)
+			c.Abort()
 			return
 		}
 

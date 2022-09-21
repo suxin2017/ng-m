@@ -29,7 +29,10 @@
     <el-col>
       <el-tabs v-model="activeName">
         <el-tab-pane label="路径映射" name="path"><domain-path /></el-tab-pane>
-        <el-tab-pane label="权限管理" name="auth">User</el-tab-pane>
+        <el-tab-pane label="资源管理" name="resource"
+          ><resource></resource
+        ></el-tab-pane>
+        <el-tab-pane label="权限管理" name="auth">Uer</el-tab-pane>
       </el-tabs>
     </el-col>
   </el-row>
@@ -40,7 +43,9 @@ import { formatDate } from "@/utils";
 import { onMounted, reactive, ref, watch, watchEffect } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import DomainPath from "../components/domainDetail/DomainPath.vue";
+import Resource from "@/components/domainDetail/Resource.vue";
 const router = useRouter();
+const route = useRoute();
 const detail = reactive({});
 
 const getDomainInfo = async () => {

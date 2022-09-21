@@ -30,6 +30,9 @@ func ConnectDatabase() {
 	}
 	DB.AutoMigrate(&Domain{})
 	DB.AutoMigrate(&User{})
+	DB.AutoMigrate(&Location{})
+	DB.AutoMigrate(&Server{})
+	DB.AutoMigrate(&Upstream{})
 
 	if constants.IsDev() {
 

@@ -1,2 +1,8 @@
 192.168.11.1 - - [12/Sep/2022:12:31:43 +0000] "GET / HTTP/1.1" 200 615 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" "-"
 192.168.11.1 - - [12/Sep/2022:12:31:44 +0000] "GET /favicon.ico HTTP/1.1" 404 555 "http://192.168.11.130/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" "-"
+127.0.0.1 - - [21/Sep/2022:00:11:15 +0000] "GET / HTTP/1.1" 200 615 "-" "curl/7.81.0" "-"
+127.0.0.1 - - [21/Sep/2022:00:12:02 +0000] "GET / HTTP/1.1" 200 615 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" "-"
+127.0.0.1 - - [21/Sep/2022:00:12:02 +0000] "GET /favicon.ico HTTP/1.1" 404 555 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" "-"
+127.0.0.1 - - [21/Sep/2022:00:16:41 +0000] "GET / HTTP/1.1" 200 615 "-" "curl/7.81.0" "-"
+127.0.0.1 - - [21/Sep/2022:00:16:48 +0000] "GET / HTTP/1.1" 200 615 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" "-"
+127.0.0.1 - - [21/Sep/2022:00:16:48 +0000] "GET /favicon.ico HTTP/1.1" 404 555 "http://localhost/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" "-"

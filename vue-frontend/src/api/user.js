@@ -20,6 +20,10 @@ export async function userListUseGet(params) {
   return await r.get("/user/list", { params });
 }
 
+export async function userAdd(data) {
+  return await r.post("/user/add", data);
+}
+
 export const useGlobalUserState = createGlobalState(() => {
   const user = reactive({
     id: undefined,

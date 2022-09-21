@@ -9,3 +9,365 @@
 2022/09/12 12:31:33 [notice] 4234#4234: start worker process 4237
 2022/09/12 12:31:33 [notice] 4234#4234: start worker process 4238
 2022/09/12 12:31:44 [error] 4235#4235: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 192.168.11.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "192.168.11.130", referrer: "http://192.168.11.130/"
+2022/09/18 11:28:21 [notice] 11839#11839: using the "epoll" event method
+2022/09/18 11:28:21 [notice] 11839#11839: nginx/1.22.0
+2022/09/18 11:28:21 [notice] 11839#11839: built by gcc 11.2.0 (Ubuntu 11.2.0-19ubuntu1) 
+2022/09/18 11:28:21 [notice] 11839#11839: OS: Linux 5.15.0-47-generic
+2022/09/18 11:28:21 [notice] 11839#11839: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/09/18 11:28:21 [notice] 11840#11840: start worker processes
+2022/09/18 11:28:21 [notice] 11840#11840: start worker process 11841
+2022/09/18 11:28:21 [notice] 11840#11840: start worker process 11842
+2022/09/18 11:28:21 [notice] 11840#11840: start worker process 11843
+2022/09/18 11:28:21 [notice] 11840#11840: start worker process 11844
+2022/09/18 11:28:49 [notice] 11840#11840: signal 15 (SIGTERM) received from 11900, exiting
+2022/09/18 11:28:49 [notice] 11843#11843: exiting
+2022/09/18 11:28:49 [notice] 11842#11842: exiting
+2022/09/18 11:28:49 [notice] 11843#11843: exit
+2022/09/18 11:28:49 [notice] 11842#11842: exit
+2022/09/18 11:28:49 [notice] 11841#11841: exiting
+2022/09/18 11:28:49 [notice] 11841#11841: exit
+2022/09/18 11:28:49 [notice] 11844#11844: exiting
+2022/09/18 11:28:49 [notice] 11844#11844: exit
+2022/09/18 11:28:49 [notice] 11840#11840: signal 17 (SIGCHLD) received from 11841
+2022/09/18 11:28:49 [notice] 11840#11840: worker process 11841 exited with code 0
+2022/09/18 11:28:49 [notice] 11840#11840: signal 29 (SIGIO) received
+2022/09/18 11:28:49 [notice] 11840#11840: signal 17 (SIGCHLD) received from 11842
+2022/09/18 11:28:49 [notice] 11840#11840: worker process 11842 exited with code 0
+2022/09/18 11:28:49 [notice] 11840#11840: worker process 11843 exited with code 0
+2022/09/18 11:28:49 [notice] 11840#11840: worker process 11844 exited with code 0
+2022/09/18 11:28:49 [notice] 11840#11840: exit
+2022/09/18 11:39:30 [notice] 14755#14755: using the "epoll" event method
+2022/09/18 11:39:30 [notice] 14755#14755: nginx/1.22.0
+2022/09/18 11:39:30 [notice] 14755#14755: built by gcc 11.2.0 (Ubuntu 11.2.0-19ubuntu1) 
+2022/09/18 11:39:30 [notice] 14755#14755: OS: Linux 5.15.0-47-generic
+2022/09/18 11:39:30 [notice] 14755#14755: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/09/18 11:39:30 [notice] 14756#14756: start worker processes
+2022/09/18 11:39:30 [notice] 14756#14756: start worker process 14757
+2022/09/18 11:39:30 [notice] 14756#14756: start worker process 14758
+2022/09/18 11:39:30 [notice] 14756#14756: start worker process 14759
+2022/09/18 11:39:30 [notice] 14756#14756: start worker process 14760
+2022/09/18 11:39:34 [notice] 14756#14756: signal 15 (SIGTERM) received from 14792, exiting
+2022/09/18 11:39:34 [notice] 14759#14759: exiting
+2022/09/18 11:39:34 [notice] 14757#14757: exiting
+2022/09/18 11:39:34 [notice] 14758#14758: exiting
+2022/09/18 11:39:34 [notice] 14759#14759: exit
+2022/09/18 11:39:34 [notice] 14757#14757: exit
+2022/09/18 11:39:34 [notice] 14758#14758: exit
+2022/09/18 11:39:34 [notice] 14760#14760: exiting
+2022/09/18 11:39:34 [notice] 14760#14760: exit
+2022/09/18 11:39:34 [notice] 14756#14756: signal 17 (SIGCHLD) received from 14759
+2022/09/18 11:39:34 [notice] 14756#14756: worker process 14757 exited with code 0
+2022/09/18 11:39:34 [notice] 14756#14756: worker process 14758 exited with code 0
+2022/09/18 11:39:34 [notice] 14756#14756: worker process 14759 exited with code 0
+2022/09/18 11:39:34 [notice] 14756#14756: worker process 14760 exited with code 0
+2022/09/18 11:39:34 [notice] 14756#14756: exit
+2022/09/18 11:40:01 [notice] 15102#15102: using the "epoll" event method
+2022/09/18 11:40:01 [notice] 15102#15102: nginx/1.22.0
+2022/09/18 11:40:01 [notice] 15102#15102: built by gcc 11.2.0 (Ubuntu 11.2.0-19ubuntu1) 
+2022/09/18 11:40:01 [notice] 15102#15102: OS: Linux 5.15.0-47-generic
+2022/09/18 11:40:01 [notice] 15102#15102: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/09/18 11:40:01 [notice] 15106#15106: start worker processes
+2022/09/18 11:40:01 [notice] 15106#15106: start worker process 15108
+2022/09/18 11:40:01 [notice] 15106#15106: start worker process 15109
+2022/09/18 11:40:01 [notice] 15106#15106: start worker process 15110
+2022/09/18 11:40:01 [notice] 15106#15106: start worker process 15111
+2022/09/18 11:40:06 [notice] 15106#15106: signal 15 (SIGTERM) received from 15142, exiting
+2022/09/18 11:40:06 [notice] 15109#15109: exiting
+2022/09/18 11:40:06 [notice] 15108#15108: exiting
+2022/09/18 11:40:06 [notice] 15110#15110: exiting
+2022/09/18 11:40:06 [notice] 15111#15111: exiting
+2022/09/18 11:40:06 [notice] 15109#15109: exit
+2022/09/18 11:40:06 [notice] 15108#15108: exit
+2022/09/18 11:40:06 [notice] 15110#15110: exit
+2022/09/18 11:40:06 [notice] 15111#15111: exit
+2022/09/18 11:40:06 [notice] 15106#15106: signal 17 (SIGCHLD) received from 15109
+2022/09/18 11:40:06 [notice] 15106#15106: worker process 15108 exited with code 0
+2022/09/18 11:40:06 [notice] 15106#15106: worker process 15109 exited with code 0
+2022/09/18 11:40:06 [notice] 15106#15106: worker process 15110 exited with code 0
+2022/09/18 11:40:06 [notice] 15106#15106: worker process 15111 exited with code 0
+2022/09/18 11:40:06 [notice] 15106#15106: exit
+2022/09/18 11:40:07 [notice] 15159#15159: using the "epoll" event method
+2022/09/18 11:40:07 [notice] 15159#15159: nginx/1.22.0
+2022/09/18 11:40:07 [notice] 15159#15159: built by gcc 11.2.0 (Ubuntu 11.2.0-19ubuntu1) 
+2022/09/18 11:40:07 [notice] 15159#15159: OS: Linux 5.15.0-47-generic
+2022/09/18 11:40:07 [notice] 15159#15159: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/09/18 11:40:07 [notice] 15160#15160: start worker processes
+2022/09/18 11:40:07 [notice] 15160#15160: start worker process 15161
+2022/09/18 11:40:07 [notice] 15160#15160: start worker process 15162
+2022/09/18 11:40:07 [notice] 15160#15160: start worker process 15163
+2022/09/18 11:40:07 [notice] 15160#15160: start worker process 15164
+2022/09/18 11:40:08 [notice] 15160#15160: signal 15 (SIGTERM) received from 15166, exiting
+2022/09/18 11:40:08 [notice] 15164#15164: exiting
+2022/09/18 11:40:08 [notice] 15164#15164: exit
+2022/09/18 11:40:08 [notice] 15161#15161: exiting
+2022/09/18 11:40:08 [notice] 15161#15161: exit
+2022/09/18 11:40:08 [notice] 15162#15162: exiting
+2022/09/18 11:40:08 [notice] 15162#15162: exit
+2022/09/18 11:40:08 [notice] 15163#15163: exiting
+2022/09/18 11:40:08 [notice] 15163#15163: exit
+2022/09/18 11:40:08 [notice] 15160#15160: signal 17 (SIGCHLD) received from 15164
+2022/09/18 11:40:08 [notice] 15160#15160: worker process 15161 exited with code 0
+2022/09/18 11:40:08 [notice] 15160#15160: worker process 15162 exited with code 0
+2022/09/18 11:40:08 [notice] 15160#15160: worker process 15163 exited with code 0
+2022/09/18 11:40:08 [notice] 15160#15160: worker process 15164 exited with code 0
+2022/09/18 11:40:08 [notice] 15160#15160: exit
+2022/09/18 11:48:05 [notice] 16636#16636: using the "epoll" event method
+2022/09/18 11:48:05 [notice] 16636#16636: nginx/1.22.0
+2022/09/18 11:48:05 [notice] 16636#16636: built by gcc 11.2.0 (Ubuntu 11.2.0-19ubuntu1) 
+2022/09/18 11:48:05 [notice] 16636#16636: OS: Linux 5.15.0-47-generic
+2022/09/18 11:48:05 [notice] 16636#16636: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/09/18 11:48:05 [notice] 16637#16637: start worker processes
+2022/09/18 11:48:05 [notice] 16637#16637: start worker process 16638
+2022/09/18 11:48:05 [notice] 16637#16637: start worker process 16639
+2022/09/18 11:48:05 [notice] 16637#16637: start worker process 16640
+2022/09/18 11:48:05 [notice] 16637#16637: start worker process 16641
+2022/09/18 11:50:50 [notice] 16637#16637: signal 15 (SIGTERM) received from 16774, exiting
+2022/09/18 11:50:50 [notice] 16638#16638: exiting
+2022/09/18 11:50:50 [notice] 16639#16639: exiting
+2022/09/18 11:50:50 [notice] 16641#16641: exiting
+2022/09/18 11:50:50 [notice] 16640#16640: exiting
+2022/09/18 11:50:50 [notice] 16638#16638: exit
+2022/09/18 11:50:50 [notice] 16639#16639: exit
+2022/09/18 11:50:50 [notice] 16641#16641: exit
+2022/09/18 11:50:50 [notice] 16640#16640: exit
+2022/09/18 11:50:50 [notice] 16637#16637: signal 17 (SIGCHLD) received from 16639
+2022/09/18 11:50:50 [notice] 16637#16637: worker process 16639 exited with code 0
+2022/09/18 11:50:50 [notice] 16637#16637: signal 29 (SIGIO) received
+2022/09/18 11:50:50 [notice] 16637#16637: signal 17 (SIGCHLD) received from 16640
+2022/09/18 11:50:50 [notice] 16637#16637: worker process 16638 exited with code 0
+2022/09/18 11:50:50 [notice] 16637#16637: worker process 16640 exited with code 0
+2022/09/18 11:50:50 [notice] 16637#16637: signal 29 (SIGIO) received
+2022/09/18 11:50:50 [notice] 16637#16637: signal 17 (SIGCHLD) received from 16641
+2022/09/18 11:50:50 [notice] 16637#16637: worker process 16641 exited with code 0
+2022/09/18 11:50:50 [notice] 16637#16637: exit
+2022/09/18 11:50:52 [notice] 16806#16806: using the "epoll" event method
+2022/09/18 11:50:52 [notice] 16806#16806: nginx/1.22.0
+2022/09/18 11:50:52 [notice] 16806#16806: built by gcc 11.2.0 (Ubuntu 11.2.0-19ubuntu1) 
+2022/09/18 11:50:52 [notice] 16806#16806: OS: Linux 5.15.0-47-generic
+2022/09/18 11:50:52 [notice] 16806#16806: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/09/18 11:50:52 [notice] 16807#16807: start worker processes
+2022/09/18 11:50:52 [notice] 16807#16807: start worker process 16808
+2022/09/18 11:50:52 [notice] 16807#16807: start worker process 16809
+2022/09/18 11:50:52 [notice] 16807#16807: start worker process 16810
+2022/09/18 11:50:52 [notice] 16807#16807: start worker process 16811
+2022/09/18 11:50:53 [notice] 16807#16807: signal 1 (SIGHUP) received from 16813, reconfiguring
+2022/09/18 11:50:53 [notice] 16807#16807: reconfiguring
+2022/09/18 11:50:53 [notice] 16807#16807: using the "epoll" event method
+2022/09/18 11:50:53 [notice] 16807#16807: start worker processes
+2022/09/18 11:50:53 [notice] 16807#16807: start worker process 16814
+2022/09/18 11:50:53 [notice] 16807#16807: start worker process 16815
+2022/09/18 11:50:53 [notice] 16807#16807: start worker process 16816
+2022/09/18 11:50:53 [notice] 16807#16807: start worker process 16817
+2022/09/18 11:50:53 [notice] 16809#16809: gracefully shutting down
+2022/09/18 11:50:53 [notice] 16811#16811: gracefully shutting down
+2022/09/18 11:50:53 [notice] 16808#16808: gracefully shutting down
+2022/09/18 11:50:53 [notice] 16809#16809: exiting
+2022/09/18 11:50:53 [notice] 16811#16811: exiting
+2022/09/18 11:50:53 [notice] 16808#16808: exiting
+2022/09/18 11:50:53 [notice] 16811#16811: exit
+2022/09/18 11:50:53 [notice] 16809#16809: exit
+2022/09/18 11:50:53 [notice] 16808#16808: exit
+2022/09/18 11:50:53 [notice] 16810#16810: gracefully shutting down
+2022/09/18 11:50:53 [notice] 16810#16810: exiting
+2022/09/18 11:50:53 [notice] 16810#16810: exit
+2022/09/18 11:50:53 [notice] 16807#16807: signal 17 (SIGCHLD) received from 16810
+2022/09/18 11:50:53 [notice] 16807#16807: worker process 16808 exited with code 0
+2022/09/18 11:50:53 [notice] 16807#16807: worker process 16810 exited with code 0
+2022/09/18 11:50:53 [notice] 16807#16807: signal 29 (SIGIO) received
+2022/09/18 11:50:53 [notice] 16807#16807: signal 17 (SIGCHLD) received from 16811
+2022/09/18 11:50:53 [notice] 16807#16807: worker process 16811 exited with code 0
+2022/09/18 11:50:53 [notice] 16807#16807: signal 29 (SIGIO) received
+2022/09/18 11:50:53 [notice] 16807#16807: signal 17 (SIGCHLD) received from 16809
+2022/09/18 11:50:53 [notice] 16807#16807: worker process 16809 exited with code 0
+2022/09/18 11:50:53 [notice] 16807#16807: signal 29 (SIGIO) received
+2022/09/18 11:52:09 [emerg] 16927#16927: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2022/09/18 11:52:09 [notice] 16927#16927: try again to bind() after 500ms
+2022/09/18 11:52:09 [emerg] 16927#16927: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2022/09/18 11:52:09 [notice] 16927#16927: try again to bind() after 500ms
+2022/09/18 11:52:09 [emerg] 16927#16927: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2022/09/18 11:52:09 [notice] 16927#16927: try again to bind() after 500ms
+2022/09/18 11:52:09 [emerg] 16927#16927: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2022/09/18 11:52:09 [notice] 16927#16927: try again to bind() after 500ms
+2022/09/18 11:52:09 [emerg] 16927#16927: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2022/09/18 11:52:09 [notice] 16927#16927: try again to bind() after 500ms
+2022/09/18 11:52:09 [emerg] 16927#16927: still could not bind()
+2022/09/18 11:52:34 [notice] 16807#16807: signal 1 (SIGHUP) received from 17005, reconfiguring
+2022/09/18 11:52:34 [notice] 16807#16807: reconfiguring
+2022/09/18 11:52:34 [notice] 16807#16807: using the "epoll" event method
+2022/09/18 11:52:34 [notice] 16807#16807: start worker processes
+2022/09/18 11:52:34 [notice] 16807#16807: start worker process 17006
+2022/09/18 11:52:34 [notice] 16807#16807: start worker process 17007
+2022/09/18 11:52:34 [notice] 16807#16807: start worker process 17008
+2022/09/18 11:52:34 [notice] 16807#16807: start worker process 17009
+2022/09/18 11:52:34 [notice] 16816#16816: gracefully shutting down
+2022/09/18 11:52:34 [notice] 16816#16816: exiting
+2022/09/18 11:52:34 [notice] 16815#16815: gracefully shutting down
+2022/09/18 11:52:34 [notice] 16817#16817: gracefully shutting down
+2022/09/18 11:52:34 [notice] 16814#16814: gracefully shutting down
+2022/09/18 11:52:34 [notice] 16815#16815: exiting
+2022/09/18 11:52:34 [notice] 16817#16817: exiting
+2022/09/18 11:52:34 [notice] 16814#16814: exiting
+2022/09/18 11:52:34 [notice] 16816#16816: exit
+2022/09/18 11:52:34 [notice] 16815#16815: exit
+2022/09/18 11:52:34 [notice] 16817#16817: exit
+2022/09/18 11:52:34 [notice] 16814#16814: exit
+2022/09/18 11:52:34 [notice] 16807#16807: signal 17 (SIGCHLD) received from 16815
+2022/09/18 11:52:34 [notice] 16807#16807: worker process 16814 exited with code 0
+2022/09/18 11:52:34 [notice] 16807#16807: worker process 16815 exited with code 0
+2022/09/18 11:52:34 [notice] 16807#16807: worker process 16816 exited with code 0
+2022/09/18 11:52:34 [notice] 16807#16807: worker process 16817 exited with code 0
+2022/09/18 11:52:34 [notice] 16807#16807: signal 29 (SIGIO) received
+2022/09/18 11:52:51 [emerg] 17103#17103: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2022/09/18 11:52:51 [notice] 17103#17103: try again to bind() after 500ms
+2022/09/18 11:52:51 [emerg] 17103#17103: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2022/09/18 11:52:51 [notice] 17103#17103: try again to bind() after 500ms
+2022/09/18 11:52:51 [emerg] 17103#17103: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2022/09/18 11:52:51 [notice] 17103#17103: try again to bind() after 500ms
+2022/09/18 11:52:51 [emerg] 17103#17103: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2022/09/18 11:52:51 [notice] 17103#17103: try again to bind() after 500ms
+2022/09/18 11:52:51 [emerg] 17103#17103: bind() to 0.0.0.0:8080 failed (98: Address already in use)
+2022/09/18 11:52:51 [notice] 17103#17103: try again to bind() after 500ms
+2022/09/18 11:52:51 [emerg] 17103#17103: still could not bind()
+2022/09/18 11:52:57 [notice] 16807#16807: signal 1 (SIGHUP) received from 17165, reconfiguring
+2022/09/18 11:52:57 [notice] 16807#16807: reconfiguring
+2022/09/18 11:52:57 [notice] 16807#16807: using the "epoll" event method
+2022/09/18 11:52:57 [notice] 16807#16807: start worker processes
+2022/09/18 11:52:57 [notice] 16807#16807: start worker process 17166
+2022/09/18 11:52:57 [notice] 16807#16807: start worker process 17167
+2022/09/18 11:52:57 [notice] 16807#16807: start worker process 17168
+2022/09/18 11:52:57 [notice] 16807#16807: start worker process 17169
+2022/09/18 11:52:57 [notice] 17009#17009: gracefully shutting down
+2022/09/18 11:52:57 [notice] 17009#17009: exiting
+2022/09/18 11:52:57 [notice] 17007#17007: gracefully shutting down
+2022/09/18 11:52:57 [notice] 17006#17006: gracefully shutting down
+2022/09/18 11:52:57 [notice] 17007#17007: exiting
+2022/09/18 11:52:57 [notice] 17009#17009: exit
+2022/09/18 11:52:57 [notice] 17006#17006: exiting
+2022/09/18 11:52:57 [notice] 17007#17007: exit
+2022/09/18 11:52:57 [notice] 17006#17006: exit
+2022/09/18 11:52:57 [notice] 17008#17008: gracefully shutting down
+2022/09/18 11:52:57 [notice] 17008#17008: exiting
+2022/09/18 11:52:57 [notice] 17008#17008: exit
+2022/09/18 11:52:57 [notice] 16807#16807: signal 17 (SIGCHLD) received from 17008
+2022/09/18 11:52:57 [notice] 16807#16807: worker process 17007 exited with code 0
+2022/09/18 11:52:57 [notice] 16807#16807: worker process 17008 exited with code 0
+2022/09/18 11:52:57 [notice] 16807#16807: signal 29 (SIGIO) received
+2022/09/18 11:52:57 [notice] 16807#16807: signal 17 (SIGCHLD) received from 17009
+2022/09/18 11:52:57 [notice] 16807#16807: worker process 17009 exited with code 0
+2022/09/18 11:52:57 [notice] 16807#16807: signal 29 (SIGIO) received
+2022/09/18 11:52:57 [notice] 16807#16807: signal 17 (SIGCHLD) received from 17006
+2022/09/18 11:52:57 [notice] 16807#16807: worker process 17006 exited with code 0
+2022/09/18 11:52:57 [notice] 16807#16807: signal 29 (SIGIO) received
+2022/09/18 11:52:58 [notice] 16807#16807: signal 15 (SIGTERM) received from 17186, exiting
+2022/09/18 11:52:58 [notice] 17167#17167: exiting
+2022/09/18 11:52:58 [notice] 17167#17167: exit
+2022/09/18 11:52:58 [notice] 17166#17166: exiting
+2022/09/18 11:52:58 [notice] 17169#17169: exiting
+2022/09/18 11:52:58 [notice] 17166#17166: exit
+2022/09/18 11:52:58 [notice] 17169#17169: exit
+2022/09/18 11:52:58 [notice] 17168#17168: exiting
+2022/09/18 11:52:58 [notice] 17168#17168: exit
+2022/09/18 11:52:58 [notice] 16807#16807: signal 17 (SIGCHLD) received from 17167
+2022/09/18 11:52:58 [notice] 16807#16807: worker process 17166 exited with code 0
+2022/09/18 11:52:58 [notice] 16807#16807: worker process 17167 exited with code 0
+2022/09/18 11:52:58 [notice] 16807#16807: worker process 17168 exited with code 0
+2022/09/18 11:52:58 [notice] 16807#16807: worker process 17169 exited with code 0
+2022/09/18 11:52:58 [notice] 16807#16807: exit
+2022/09/18 11:53:10 [notice] 17263#17263: using the "epoll" event method
+2022/09/18 11:53:10 [notice] 17263#17263: nginx/1.22.0
+2022/09/18 11:53:10 [notice] 17263#17263: built by gcc 11.2.0 (Ubuntu 11.2.0-19ubuntu1) 
+2022/09/18 11:53:10 [notice] 17263#17263: OS: Linux 5.15.0-47-generic
+2022/09/18 11:53:10 [notice] 17263#17263: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/09/18 11:53:10 [notice] 17264#17264: start worker processes
+2022/09/18 11:53:10 [notice] 17264#17264: start worker process 17265
+2022/09/18 11:53:10 [notice] 17264#17264: start worker process 17266
+2022/09/18 11:53:10 [notice] 17264#17264: start worker process 17267
+2022/09/18 11:53:10 [notice] 17264#17264: start worker process 17268
+2022/09/18 11:53:11 [notice] 17264#17264: signal 15 (SIGTERM) received from 17270, exiting
+2022/09/18 11:53:11 [notice] 17267#17267: exiting
+2022/09/18 11:53:11 [notice] 17265#17265: exiting
+2022/09/18 11:53:11 [notice] 17266#17266: exiting
+2022/09/18 11:53:11 [notice] 17268#17268: exiting
+2022/09/18 11:53:11 [notice] 17265#17265: exit
+2022/09/18 11:53:11 [notice] 17267#17267: exit
+2022/09/18 11:53:11 [notice] 17266#17266: exit
+2022/09/18 11:53:11 [notice] 17268#17268: exit
+2022/09/18 11:53:11 [notice] 17264#17264: signal 17 (SIGCHLD) received from 17267
+2022/09/18 11:53:11 [notice] 17264#17264: worker process 17267 exited with code 0
+2022/09/18 11:53:11 [notice] 17264#17264: signal 29 (SIGIO) received
+2022/09/18 11:53:11 [notice] 17264#17264: signal 17 (SIGCHLD) received from 17268
+2022/09/18 11:53:11 [notice] 17264#17264: worker process 17268 exited with code 0
+2022/09/18 11:53:11 [notice] 17264#17264: signal 29 (SIGIO) received
+2022/09/18 11:53:11 [notice] 17264#17264: signal 17 (SIGCHLD) received from 17265
+2022/09/18 11:53:11 [notice] 17264#17264: worker process 17265 exited with code 0
+2022/09/18 11:53:11 [notice] 17264#17264: signal 29 (SIGIO) received
+2022/09/18 11:53:11 [notice] 17264#17264: signal 17 (SIGCHLD) received from 17266
+2022/09/18 11:53:11 [notice] 17264#17264: worker process 17266 exited with code 0
+2022/09/18 11:53:11 [notice] 17264#17264: exit
+2022/09/18 11:54:56 [notice] 17430#17430: using the "epoll" event method
+2022/09/18 11:54:56 [notice] 17430#17430: nginx/1.22.0
+2022/09/18 11:54:56 [notice] 17430#17430: built by gcc 11.2.0 (Ubuntu 11.2.0-19ubuntu1) 
+2022/09/18 11:54:56 [notice] 17430#17430: OS: Linux 5.15.0-47-generic
+2022/09/18 11:54:56 [notice] 17430#17430: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/09/18 11:54:56 [notice] 17431#17431: start worker processes
+2022/09/18 11:54:56 [notice] 17431#17431: start worker process 17432
+2022/09/18 11:54:56 [notice] 17431#17431: start worker process 17433
+2022/09/18 11:54:56 [notice] 17431#17431: start worker process 17434
+2022/09/18 11:54:56 [notice] 17431#17431: start worker process 17435
+2022/09/18 11:54:58 [notice] 17431#17431: signal 15 (SIGTERM) received from 17463, exiting
+2022/09/18 11:54:58 [notice] 17434#17434: exiting
+2022/09/18 11:54:58 [notice] 17433#17433: exiting
+2022/09/18 11:54:58 [notice] 17434#17434: exit
+2022/09/18 11:54:58 [notice] 17433#17433: exit
+2022/09/18 11:54:58 [notice] 17435#17435: exiting
+2022/09/18 11:54:58 [notice] 17435#17435: exit
+2022/09/18 11:54:58 [notice] 17432#17432: exiting
+2022/09/18 11:54:58 [notice] 17432#17432: exit
+2022/09/18 11:54:58 [notice] 17431#17431: signal 17 (SIGCHLD) received from 17433
+2022/09/18 11:54:58 [notice] 17431#17431: worker process 17433 exited with code 0
+2022/09/18 11:54:58 [notice] 17431#17431: worker process 17435 exited with code 0
+2022/09/18 11:54:58 [notice] 17431#17431: signal 29 (SIGIO) received
+2022/09/18 11:54:58 [notice] 17431#17431: signal 17 (SIGCHLD) received from 17434
+2022/09/18 11:54:58 [notice] 17431#17431: worker process 17434 exited with code 0
+2022/09/18 11:54:58 [notice] 17431#17431: signal 29 (SIGIO) received
+2022/09/18 11:54:58 [notice] 17431#17431: signal 17 (SIGCHLD) received from 17432
+2022/09/18 11:54:58 [notice] 17431#17431: worker process 17432 exited with code 0
+2022/09/18 11:54:58 [notice] 17431#17431: exit
+2022/09/21 00:10:02 [notice] 26304#26304: using the "epoll" event method
+2022/09/21 00:10:02 [notice] 26304#26304: nginx/1.22.0
+2022/09/21 00:10:02 [notice] 26304#26304: built by gcc 11.2.0 (Ubuntu 11.2.0-19ubuntu1) 
+2022/09/21 00:10:02 [notice] 26304#26304: OS: Linux 5.15.0-47-generic
+2022/09/21 00:10:02 [notice] 26304#26304: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/09/21 00:10:02 [notice] 26305#26305: start worker processes
+2022/09/21 00:10:02 [notice] 26305#26305: start worker process 26306
+2022/09/21 00:10:02 [notice] 26305#26305: start worker process 26307
+2022/09/21 00:10:02 [notice] 26305#26305: start worker process 26308
+2022/09/21 00:10:02 [notice] 26305#26305: start worker process 26309
+2022/09/21 00:12:02 [error] 26309#26309: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2022/09/21 00:15:53 [notice] 26305#26305: signal 15 (SIGTERM) received from 26692, exiting
+2022/09/21 00:15:53 [notice] 26308#26308: exiting
+2022/09/21 00:15:53 [notice] 26307#26307: exiting
+2022/09/21 00:15:53 [notice] 26306#26306: exiting
+2022/09/21 00:15:53 [notice] 26307#26307: exit
+2022/09/21 00:15:53 [notice] 26306#26306: exit
+2022/09/21 00:15:53 [notice] 26308#26308: exit
+2022/09/21 00:15:53 [notice] 26309#26309: exiting
+2022/09/21 00:15:53 [notice] 26309#26309: exit
+2022/09/21 00:15:53 [notice] 26305#26305: signal 17 (SIGCHLD) received from 26307
+2022/09/21 00:15:53 [notice] 26305#26305: worker process 26306 exited with code 0
+2022/09/21 00:15:53 [notice] 26305#26305: worker process 26307 exited with code 0
+2022/09/21 00:15:53 [notice] 26305#26305: worker process 26308 exited with code 0
+2022/09/21 00:15:53 [notice] 26305#26305: worker process 26309 exited with code 0
+2022/09/21 00:15:53 [notice] 26305#26305: exit
+2022/09/21 00:16:28 [notice] 26790#26790: using the "epoll" event method
+2022/09/21 00:16:28 [notice] 26790#26790: nginx/1.22.0
+2022/09/21 00:16:28 [notice] 26790#26790: built by gcc 11.2.0 (Ubuntu 11.2.0-19ubuntu1) 
+2022/09/21 00:16:28 [notice] 26790#26790: OS: Linux 5.15.0-47-generic
+2022/09/21 00:16:28 [notice] 26790#26790: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/09/21 00:16:28 [notice] 26791#26791: start worker processes
+2022/09/21 00:16:28 [notice] 26791#26791: start worker process 26792
+2022/09/21 00:16:28 [notice] 26791#26791: start worker process 26793
+2022/09/21 00:16:28 [notice] 26791#26791: start worker process 26794
+2022/09/21 00:16:28 [notice] 26791#26791: start worker process 26795
+2022/09/21 00:16:45 [error] 26794#26794: *2 "/home/wx/ng-m/ng-config/html/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: www.test.com, request: "GET / HTTP/1.1", host: "localhost:8080"
+2022/09/21 00:16:48 [error] 26793#26793: *5 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"

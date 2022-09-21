@@ -19,3 +19,11 @@ export async function addDomain(data) {
 export async function infoDomain(id) {
   return await r.get("/domain/info", { params: { id } });
 }
+
+export async function domainResource(id, path = "") {
+  return await r.get("/domain/resource", { params: { id, path } });
+}
+
+export async function addPath(params) {
+  return await r.post("/domain/path/add", params);
+}
