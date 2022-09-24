@@ -30,7 +30,7 @@ const logout = () => {
         <el-col class="logo" :span="12">
           <span>NG-M</span>
         </el-col>
-        <el-col span="12">
+        <el-col :span="12">
           <el-dropdown>
             <el-row :gutter="12" align="middle" class="user-box">
               <el-avatar size="small" :src="user.avatar"></el-avatar>

@@ -8,27 +8,29 @@
       style="max-width: 460px"
     >
       <el-form-item
-        label="路径"
-        prop="path"
+        label="类型"
+        prop="type"
         :rules="[{ required: true, message: '请填写字段' }]"
       >
-        <el-input v-model="formModal.path" />
-      </el-form-item>
-      <el-form-item label="匹配规则" prop="matchRule">
-        <el-input v-model="formModal.matchRule" />
-      </el-form-item>
-      <el-form-item>
-        <div>
-          <div>~ 正则匹配，区分大小写</div>
-          <div>~* 正则匹配，不区分大小写</div>
-          <div>
-            ^~
-            普通字符匹配，如果该选项匹配，则，只匹配改选项，不再向下匹配其他选项
-          </div>
-          <div>= 普通字符匹配，精确匹配</div>
-        </div>
+        <el-radio-group v-model="formModal.type">
+          <el-radio :label="1">静态资源</el-radio>
+          <el-radio :label="2">反向代理</el-radio>
+        </el-radio-group>
       </el-form-item>
 
+      <el-form-item
+        v-if="formModal.type === 1"
+        label="资源路径"
+        prop="matchRule"
+      >
+        <el-input v-model="formModal.matchRule" />
+      </el-form-item>
+      <el-form-item v-else label="upstream配置" prop="matchRule">
+        <el-input
+          v-for="value in Array(10).fill(1)"
+          v-model="formModal.matchRule"
+        />
+      </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="submitForm(formRef)">创建</el-button>
         <el-button @click="resetForm(formRef)">返回</el-button>
@@ -44,7 +46,7 @@ import { useRoute } from "vue-router";
 const emit = defineEmits(["ok"]);
 const formRef = ref();
 const formModal = reactive({
-  path: "/",
+  type: 1,
   matchRule: "",
 });
 const dialogVisible = ref(false);
@@ -55,7 +57,6 @@ const submitForm = async (formEl) => {
     if (valid) {
       await addPath({ domainId: +route.params["id"], ...formModal });
       emit("ok");
-      dialogVisible.value = false;
     } else {
       console.log("error submit!", fields);
     }

@@ -4,7 +4,11 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
+	"net/http"
+	"os/exec"
 	"path"
+	"strconv"
+	"time"
 
 	"github.com/gin-gonic/gin"
 	"suxin2017.com/server/constants"
@@ -25,7 +29,6 @@ func GetDominListWithLoginUser(c *gin.Context) {
 
 		for _, domain := range domains {
 			models.DB.Joins("CreatedUser").Joins("UpdatedUser").Find(&domain)
-			utils.DebugLog(domain)
 			targetDomains = append(targetDomains, domain)
 		}
 
@@ -141,6 +144,91 @@ func GetDomainResourcePath(c *gin.Context) {
 		c.Abort()
 		return
 	}
+
+}
+func UplodaResourceToDomain(c *gin.Context) {
+	println("=============")
+	// Multipart form
+	file, err := c.FormFile("file")
+	if err != nil {
+		log.Println(err)
+	}
+	domainId := c.Request.FormValue("domainId")
+	extractArchive := c.Request.FormValue("flag")
+	log.Println("=============")
+	log.Println(domainId)
+	u64, err := strconv.ParseUint(domainId, 10, 32)
+	if err != nil {
+		c.Error(fmt.Errorf("domain is't a number"))
+		return
+	}
+	var targetDomain models.Domain
+	models.DB.First(&targetDomain, u64)
+	if targetDomain.ID == 0 {
+		c.Error(fmt.Errorf("domain 不存在"))
+		return
+	}
+
+	dst := constants.GetNginxDomainResourceDir(uint(u64))
+
+	// 如果是压缩包解压
+
+	if extractArchive != "true" {
+		fileExt := path.Ext(file.Filename)
+		log.Printf("上传文件", fileExt)
+		if fileExt == ".tar" || fileExt == ".zip" {
+			fileName := file.Filename
+
+			fileName = fmt.Sprintf("%v_%v_%v", time.Now().UnixMilli(), domainId, fileName)
+			p := constants.GetNginxUploadDir()
+			uploadPath := path.Join(p, fileName)
+			targetPath := dst
+			log.Printf("上传文件路径%v\n", uploadPath)
+
+			if err := c.SaveUploadedFile(file, uploadPath); err != nil {
+				c.Error(fmt.Errorf("上传文件失败"))
+				log.Println(err)
+				return
+			}
+
+			if fileExt == ".tar" {
+				cmd := exec.Command("tar", "-xvf", uploadPath, "-C", targetPath)
+				out, err := cmd.CombinedOutput()
+				println(string(out[:]))
+
+				if err != nil {
+					log.Fatal(err)
+				}
+
+			}
+
+			if fileExt == ".zip" {
+				cmd := exec.Command("unzip", "-d", targetPath, "-o", uploadPath)
+				out, err := cmd.CombinedOutput()
+
+				println(string(out[:]))
+
+				if err != nil {
+					log.Fatal(err)
+				}
+
+			}
+
+		} else {
+			c.Error(fmt.Errorf("只支持.zip或.tar"))
+			return
+		}
+	} else {
+		log.Printf("上传文件路径%v\n", path.Join(dst, path.Clean(file.Filename)))
+		// Upload the file to specific dst.
+		if err := c.SaveUploadedFile(file, path.Join(dst, path.Clean(file.Filename))); err != nil {
+			c.Error(fmt.Errorf("上传文件失败"))
+			log.Println(err)
+			return
+		}
+	}
+
+	c.JSON(http.StatusOK, utils.OkMessage())
 
 }
 

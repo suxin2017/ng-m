@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"strings"
 	"text/template"
+
+	"gorm.io/gorm"
 )
 
 type Domain struct {
@@ -22,10 +24,16 @@ type Location struct {
 	CommonModel
 	DomainId   uint     `json:"domainId,omitempty"`
 	MatchRule  string   `json:"matchRule,omitempty"`
+	Type       int      `json:"type,omitempty"`
 	Root       string   `json:"root,omitempty"`
 	Path       string   `json:"path,omitempty"`
 	Upstream   Upstream `json:"upstream,omitempty"`
 	UpstreamId uint     `json:"upstreamId,omitempty"`
+}
+
+func (l *Location) BeforeCreate(*gorm.DB) error {
+	l.Type = 1
+	return nil
 }
 
 type Upstream struct {

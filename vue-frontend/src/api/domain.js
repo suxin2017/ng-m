@@ -27,3 +27,7 @@ export async function domainResource(id, path = "") {
 export async function addPath(params) {
   return await r.post("/domain/path/add", params);
 }
+
+export async function getPathList(params) {
+  return await r.get("/domain/path/list", { params });
+}

@@ -35,6 +35,7 @@ func AddPath(c *gin.Context) {
 			c.Abort()
 			return
 		}
+
 		if err := models.DB.Transaction(func(tx *gorm.DB) error {
 			if err := tx.Model(&targetDomain).Association("Locations").Append(&models.Location{
 				Path:      pathParam.Path,
@@ -65,6 +66,41 @@ func AddPath(c *gin.Context) {
 		} else {
 			c.Error(err)
 		}
+	}
+
+}
+
+type GetPathListParams struct {
+	CommonPageParam
+	DomainId uint `form:"domainId"`
+}
+
+func GetPathList(c *gin.Context) {
+	var pathParam GetPathListParams = GetPathListParams{
+		CommonPageParam: NewPageParam(),
+	}
+	if err := c.ShouldBind(&pathParam); err == nil {
+		var targetDomain models.Domain
+		var resultPageList []models.Location
+		if pathParam.DomainId == 0 {
+			c.Error(fmt.Errorf("domain id is empty"))
+			return
+		}
+
+		models.DB.First(&targetDomain, pathParam.DomainId)
+		if targetDomain.ID == 0 {
+			c.Error(fmt.Errorf("domain is't existed"))
+			return
+		}
+		DBPageChain(models.DB.Model(&targetDomain), pathParam.CommonPageParam).Association("Locations").Find(&resultPageList)
+		total := models.DB.Model(&targetDomain).Association("Locations").Count()
+		c.JSON(200, utils.Ok(gin.H{
+			"total": total,
+			"data":  resultPageList,
+		}))
+
+	} else {
+		c.Error(err)
 	}
 
 }

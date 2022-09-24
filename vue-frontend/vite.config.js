@@ -26,6 +26,10 @@ export default defineConfig(({ command }) => {
           target: "http://localhost:8081",
           ws: true,
         },
+        "/domain-preview": {
+          target: "http://localhost:8081",
+          ws: true,
+        },
       },
     },
     resolve: {

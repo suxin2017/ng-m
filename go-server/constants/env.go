@@ -37,16 +37,21 @@ func GetNginxConfigDir() string {
 }
 
 func GetNginxDomainConfigDir() string {
-	return path.Join(GetNginxConfigDir(), "demoain")
+	return path.Join(GetNginxConfigDir(), "domain")
+}
+
+func GetNginxUploadDir() string {
+	return path.Join(GetNginxConfigDir(), "upload")
 }
 
 func GetNginxDomainResourceDir(domainId uint) string {
-	return path.Join(GetNginxDomainConfigDir(), strconv.FormatUint(uint64(domainId), 16))
+	return path.Join(GetNginxDomainConfigDir(), strconv.FormatUint(uint64(domainId), 10))
 }
 
 func InitEnvDir() {
 	InitNotExistDir(GetLogDir())
 	InitNotExistDir(GetNginxDomainConfigDir())
+	InitNotExistDir(GetNginxUploadDir())
 }
 
 func InitNotExistDir(dirPath string) {

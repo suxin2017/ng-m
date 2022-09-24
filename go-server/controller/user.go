@@ -21,8 +21,8 @@ func CurrentUser(c *gin.Context) {
 }
 
 type CommonPageParam struct {
-	PageSize int `json:"page_size,omitempty"`
-	PageNum  int `json:"page_num,omitempty"`
+	PageSize int `json:"pageSize,omitempty"`
+	PageNum  int `json:"pageNum,omitempty"`
 }
 
 func NewPageParam() CommonPageParam {

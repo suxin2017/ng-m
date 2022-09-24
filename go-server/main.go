@@ -36,6 +36,8 @@ func setupRouter() *gin.Engine {
 
 	api := r.Group("/api")
 
+	r.Static("/domain-preview", constants.GetNginxDomainConfigDir())
+
 	// Ping test
 	api.GET("/ping", func(c *gin.Context) {
 		user, exist := c.Get("currentUser")
@@ -56,9 +58,12 @@ func setupRouter() *gin.Engine {
 	domainRouter.GET("/list", controller.GetDominListWithLoginUser)
 	domainRouter.POST("/add", controller.AddDomainByUser)
 	domainRouter.GET("/info", controller.GetDomainById)
+
 	domainRouter.GET("/resource", controller.GetDomainResourcePath)
+	domainRouter.POST("/resource/upload", controller.UplodaResourceToDomain)
 	locationRouter := domainRouter.Group("/path")
 	locationRouter.POST("/add", controller.AddPath)
+	locationRouter.GET("/list", controller.GetPathList)
 
 	nginxRouter := api.Group("nginx")
 	nginxRouter.GET("/status", controller.GetNginxStatus)
