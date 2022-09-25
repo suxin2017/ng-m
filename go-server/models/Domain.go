@@ -2,10 +2,12 @@ package models
 
 import (
 	"fmt"
+	"path"
 	"strings"
 	"text/template"
 
 	"gorm.io/gorm"
+	"suxin2017.com/server/constants"
 )
 
 type Domain struct {
@@ -22,13 +24,15 @@ type Domain struct {
 
 type Location struct {
 	CommonModel
-	DomainId   uint     `json:"domainId,omitempty"`
-	MatchRule  string   `json:"matchRule,omitempty"`
-	Type       int      `json:"type,omitempty"`
-	Root       string   `json:"root,omitempty"`
-	Path       string   `json:"path,omitempty"`
-	Upstream   Upstream `json:"upstream,omitempty"`
-	UpstreamId uint     `json:"upstreamId,omitempty"`
+	DomainId  uint   `json:"domainId,omitempty"`
+	MatchRule string `json:"matchRule,omitempty"`
+	Type      int    `json:"type,omitempty"`
+	Root      string `json:"root,omitempty"`
+	Path      string `json:"path,omitempty"`
+	// Upstream   Upstream `json:"upstream,omitempty"`
+	// UpstreamId uint     `json:"upstreamId,omitempty"`
+	ServerHost string `json:"serverHost,omitempty"`
+	ServerPort string `json:"serverPort,omitempty"`
 }
 
 func (l *Location) BeforeCreate(*gorm.DB) error {
@@ -48,37 +52,35 @@ type Server struct {
 	UpstreamID uint
 }
 
-func GetNginxConfigFromLocationAndDomain(location Location, domain Domain) string {
+func GetNginxConfigFromLocationAndDomain(locations []Location, domain Domain) string {
 	var sb strings.Builder
 	sb.WriteString(`server {
 `)
 
-	sb.WriteString(fmt.Sprintf("	access_log  logs/nginx/%v.access.log  main;", domain.ID))
-	sb.WriteString(fmt.Sprintf("server_name %v;\n", domain.Domain))
+	sb.WriteString(fmt.Sprintf("	access_log  logs/nginx/%v.access.log  main;\n", domain.ID))
+	sb.WriteString(fmt.Sprintf("	server_name %v;\n", domain.Domain))
+	sb.WriteString("	listen 80;\n")
 
 	locatonStr := `
 	location {{.MatchRule}} {{.Path}} {
-{{if .Root}}		root  {{.Root}};{{end}}
-{{if .Upstream}}		proxy_pass http://{{.Upstream.Name}};{{end}}
-
+{{if eq .Type 1}}		root  {{.Root}};{{end}}
+{{if eq .Type 2}}		proxy_pass http://{{.ServerHost}}:{{.ServerPort}};{{end}}
 	}
 `
+	for _, location := range locations {
 
-	upstreamStr := `
-	upstream {{.Name}} {
-{{range .Servers}}
-		server {{.ServerHost}}:{{.ServerPort}};
-{{end}}
+		if location.Root != "" {
+			location.Root = path.Join(constants.GetNginxDomainResourceDir(domain.ID), location.Root)
+		}
+		if location.Root != "" || location.ServerHost != "" {
+
+			t := template.Must(template.New("location").Parse(locatonStr))
+
+			t.Execute(&sb, location)
+		}
+
 	}
-`
 
-	t := template.Must(template.New("location").Parse(locatonStr))
-	t.Execute(&sb, location)
-
-	if location.Upstream.Servers != nil {
-		t := template.Must(template.New("upstream").Parse(upstreamStr))
-		t.Execute(&sb, location.Upstream)
-	}
 	sb.WriteString(`
 }`)
 	return sb.String()

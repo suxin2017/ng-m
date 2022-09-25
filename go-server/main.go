@@ -60,10 +60,14 @@ func setupRouter() *gin.Engine {
 	domainRouter.GET("/info", controller.GetDomainById)
 
 	domainRouter.GET("/resource", controller.GetDomainResourcePath)
-	domainRouter.POST("/resource/upload", controller.UplodaResourceToDomain)
+	domainRouter.GET("/nginxConfig", controller.GetNginxConfig)
+	domainRouter.POST("/resource/upload", controller.
+		UplodaResourceToDomain)
 	locationRouter := domainRouter.Group("/path")
 	locationRouter.POST("/add", controller.AddPath)
 	locationRouter.GET("/list", controller.GetPathList)
+	locationRouter.POST("/add/root", controller.SaveStaticPathConfig)
+	locationRouter.GET("/info", controller.GetPathInfo)
 
 	nginxRouter := api.Group("nginx")
 	nginxRouter.GET("/status", controller.GetNginxStatus)

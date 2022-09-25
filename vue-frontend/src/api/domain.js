@@ -27,7 +27,22 @@ export async function domainResource(id, path = "") {
 export async function addPath(params) {
   return await r.post("/domain/path/add", params);
 }
-
+export async function addPathRoot(params) {
+  return await r.post("/domain/path/add/root", params);
+}
+export async function getPathInfo(params) {
+  return await r.get("/domain/path/info", { params });
+}
 export async function getPathList(params) {
   return await r.get("/domain/path/list", { params });
 }
+
+export async function getNginxConfig(params) {
+  return await r.get("/domain/nginxConfig", {
+    params: {
+      domainId: 10,
+    },
+  });
+}
+
+// getNginxConfig();

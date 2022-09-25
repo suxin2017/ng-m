@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 	"os/exec"
 	"path"
 	"strconv"
@@ -251,4 +252,44 @@ func GetFileTreeFromDir(dirPath string) []FileNode {
 
 	return fileRoot
 
+}
+
+type GetNginxConfigParam struct {
+	DomainId uint `form:"domainId"`
+}
+
+func GetNginxConfig(c *gin.Context) {
+
+	var params GetNginxConfigParam
+	if err := c.ShouldBind(&params); err == nil {
+		if params.DomainId == 0 {
+			c.Error(fmt.Errorf("DomainId is required"))
+			c.Abort()
+			return
+		}
+
+		var targetDomain models.Domain
+
+		models.DB.Preload("Locations").First(&targetDomain, params.DomainId)
+		utils.DebugLog(targetDomain)
+		nginxConfig := models.GetNginxConfigFromLocationAndDomain(targetDomain.Locations, targetDomain)
+		fmt.Println(nginxConfig)
+
+		domainNginxConfigPath := path.Join(constants.GetNginxConDDir(), fmt.Sprintf("%d.conf", targetDomain.ID))
+		file, err := os.Create(domainNginxConfigPath)
+		if err != nil {
+			c.Error(fmt.Errorf("文件处理失败"))
+			return
+		}
+		defer file.Close()
+
+		file.WriteString(nginxConfig)
+
+		c.JSON(200, utils.Ok(nginxConfig))
+
+	} else {
+		c.Error(fmt.Errorf("something is error"))
+		c.Abort()
+		return
+	}
 }

@@ -36,6 +36,10 @@ func GetNginxConfigDir() string {
 	return path.Join(GetProjectRoot(), "ng-config")
 }
 
+func GetNginxConDDir() string {
+	return path.Join(GetNginxConfigDir(), "conf.d")
+}
+
 func GetNginxDomainConfigDir() string {
 	return path.Join(GetNginxConfigDir(), "domain")
 }

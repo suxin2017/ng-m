@@ -19,7 +19,7 @@
                 </div>
                 <div>
                   <el-button
-                    @click.stop="addConfig"
+                    @click.stop="addConfig(detail.id)"
                     link
                     type="primary"
                     size="small"
@@ -82,8 +82,8 @@ const getList = async () => {
 onMounted(() => {
   getList();
 });
-const addConfig = () => {
-  modalRef.value.openModal();
+const addConfig = (pathId) => {
+  modalRef.value.openModal(pathId);
 };
 const addPath = () => {
   addPathModalRef.value.openModal();

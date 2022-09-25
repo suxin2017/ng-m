@@ -371,3 +371,1090 @@
 2022/09/21 00:16:28 [notice] 26791#26791: start worker process 26795
 2022/09/21 00:16:45 [error] 26794#26794: *2 "/home/wx/ng-m/ng-config/html/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: www.test.com, request: "GET / HTTP/1.1", host: "localhost:8080"
 2022/09/21 00:16:48 [error] 26793#26793: *5 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2022/09/25 01:24:11 [notice] 26791#26791: signal 1 (SIGHUP) received from 143865, reconfiguring
+2022/09/25 01:24:11 [notice] 26791#26791: reconfiguring
+2022/09/25 01:24:11 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 01:24:11 [notice] 26791#26791: start worker processes
+2022/09/25 01:24:11 [notice] 26791#26791: start worker process 143866
+2022/09/25 01:24:11 [notice] 26791#26791: start worker process 143867
+2022/09/25 01:24:11 [notice] 26791#26791: start worker process 143868
+2022/09/25 01:24:11 [notice] 26791#26791: start worker process 143869
+2022/09/25 01:24:11 [notice] 26793#26793: gracefully shutting down
+2022/09/25 01:24:11 [notice] 26794#26794: gracefully shutting down
+2022/09/25 01:24:11 [notice] 26795#26795: gracefully shutting down
+2022/09/25 01:24:11 [notice] 26792#26792: gracefully shutting down
+2022/09/25 01:24:11 [notice] 26794#26794: exiting
+2022/09/25 01:24:11 [notice] 26795#26795: exiting
+2022/09/25 01:24:11 [notice] 26795#26795: exit
+2022/09/25 01:24:11 [notice] 26792#26792: exiting
+2022/09/25 01:24:11 [notice] 26794#26794: exit
+2022/09/25 01:24:11 [notice] 26793#26793: exiting
+2022/09/25 01:24:11 [notice] 26792#26792: exit
+2022/09/25 01:24:11 [notice] 26793#26793: exit
+2022/09/25 01:24:11 [notice] 26791#26791: signal 17 (SIGCHLD) received from 26793
+2022/09/25 01:24:11 [notice] 26791#26791: worker process 26792 exited with code 0
+2022/09/25 01:24:11 [notice] 26791#26791: worker process 26793 exited with code 0
+2022/09/25 01:24:11 [notice] 26791#26791: worker process 26794 exited with code 0
+2022/09/25 01:24:11 [notice] 26791#26791: worker process 26795 exited with code 0
+2022/09/25 01:24:11 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:24:11 [notice] 26791#26791: signal 17 (SIGCHLD) received from 26795
+2022/09/25 01:26:06 [notice] 26791#26791: signal 1 (SIGHUP) received from 144029, reconfiguring
+2022/09/25 01:26:06 [notice] 26791#26791: reconfiguring
+2022/09/25 01:26:06 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 01:26:06 [notice] 26791#26791: start worker processes
+2022/09/25 01:26:06 [notice] 26791#26791: start worker process 144030
+2022/09/25 01:26:06 [notice] 26791#26791: start worker process 144031
+2022/09/25 01:26:06 [notice] 26791#26791: start worker process 144032
+2022/09/25 01:26:06 [notice] 26791#26791: start worker process 144033
+2022/09/25 01:26:06 [notice] 143866#143866: gracefully shutting down
+2022/09/25 01:26:06 [notice] 143868#143868: gracefully shutting down
+2022/09/25 01:26:06 [notice] 143867#143867: gracefully shutting down
+2022/09/25 01:26:06 [notice] 143869#143869: gracefully shutting down
+2022/09/25 01:26:06 [notice] 143866#143866: exiting
+2022/09/25 01:26:06 [notice] 143868#143868: exiting
+2022/09/25 01:26:06 [notice] 143867#143867: exiting
+2022/09/25 01:26:06 [notice] 143869#143869: exiting
+2022/09/25 01:26:06 [notice] 143867#143867: exit
+2022/09/25 01:26:06 [notice] 143868#143868: exit
+2022/09/25 01:26:06 [notice] 143866#143866: exit
+2022/09/25 01:26:06 [notice] 143869#143869: exit
+2022/09/25 01:26:06 [notice] 26791#26791: signal 17 (SIGCHLD) received from 143866
+2022/09/25 01:26:06 [notice] 26791#26791: worker process 143866 exited with code 0
+2022/09/25 01:26:06 [notice] 26791#26791: worker process 143867 exited with code 0
+2022/09/25 01:26:06 [notice] 26791#26791: worker process 143868 exited with code 0
+2022/09/25 01:26:06 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:26:06 [notice] 26791#26791: signal 17 (SIGCHLD) received from 143869
+2022/09/25 01:26:06 [notice] 26791#26791: worker process 143869 exited with code 0
+2022/09/25 01:26:06 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:28:29 [error] 144030#144030: *8 "/home/wx/ng-m/ng-config/html/index.html" is not found (2: No such file or directory), client: 192.168.11.1, server: www.test.com, request: "GET / HTTP/1.1", host: "192.168.11.130"
+2022/09/25 01:28:29 [error] 144030#144030: *8 open() "/home/wx/ng-m/ng-config/html/favicon.ico" failed (2: No such file or directory), client: 192.168.11.1, server: www.test.com, request: "GET /favicon.ico HTTP/1.1", host: "192.168.11.130", referrer: "http://192.168.11.130/"
+2022/09/25 01:28:43 [error] 144030#144030: *8 "/home/wx/ng-m/ng-config/html/index.html" is not found (2: No such file or directory), client: 192.168.11.1, server: www.test.com, request: "GET / HTTP/1.1", host: "192.168.11.130"
+2022/09/25 01:29:14 [notice] 26791#26791: signal 1 (SIGHUP) received from 144565, reconfiguring
+2022/09/25 01:29:14 [notice] 26791#26791: reconfiguring
+2022/09/25 01:29:14 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 01:29:14 [notice] 26791#26791: start worker processes
+2022/09/25 01:29:14 [notice] 26791#26791: start worker process 144566
+2022/09/25 01:29:14 [notice] 26791#26791: start worker process 144567
+2022/09/25 01:29:14 [notice] 26791#26791: start worker process 144568
+2022/09/25 01:29:14 [notice] 26791#26791: start worker process 144569
+2022/09/25 01:29:14 [notice] 144031#144031: gracefully shutting down
+2022/09/25 01:29:14 [notice] 144031#144031: exiting
+2022/09/25 01:29:14 [notice] 144030#144030: gracefully shutting down
+2022/09/25 01:29:14 [notice] 144030#144030: exiting
+2022/09/25 01:29:14 [notice] 144031#144031: exit
+2022/09/25 01:29:14 [notice] 144032#144032: gracefully shutting down
+2022/09/25 01:29:14 [notice] 144030#144030: exit
+2022/09/25 01:29:14 [notice] 144032#144032: exiting
+2022/09/25 01:29:14 [notice] 144032#144032: exit
+2022/09/25 01:29:14 [notice] 144033#144033: gracefully shutting down
+2022/09/25 01:29:14 [notice] 26791#26791: signal 17 (SIGCHLD) received from 144030
+2022/09/25 01:29:14 [notice] 26791#26791: worker process 144030 exited with code 0
+2022/09/25 01:29:14 [notice] 26791#26791: worker process 144031 exited with code 0
+2022/09/25 01:29:14 [notice] 26791#26791: worker process 144032 exited with code 0
+2022/09/25 01:29:14 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:29:29 [notice] 144033#144033: exiting
+2022/09/25 01:29:29 [notice] 144033#144033: exit
+2022/09/25 01:29:29 [notice] 26791#26791: signal 17 (SIGCHLD) received from 144033
+2022/09/25 01:29:29 [notice] 26791#26791: worker process 144033 exited with code 0
+2022/09/25 01:29:29 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:31:10 [notice] 26791#26791: signal 1 (SIGHUP) received from 144974, reconfiguring
+2022/09/25 01:31:10 [notice] 26791#26791: reconfiguring
+2022/09/25 01:31:10 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 01:31:10 [notice] 26791#26791: start worker processes
+2022/09/25 01:31:10 [notice] 26791#26791: start worker process 144975
+2022/09/25 01:31:10 [notice] 26791#26791: start worker process 144976
+2022/09/25 01:31:10 [notice] 26791#26791: start worker process 144977
+2022/09/25 01:31:10 [notice] 26791#26791: start worker process 144978
+2022/09/25 01:31:10 [notice] 144567#144567: gracefully shutting down
+2022/09/25 01:31:10 [notice] 144566#144566: gracefully shutting down
+2022/09/25 01:31:10 [notice] 144567#144567: exiting
+2022/09/25 01:31:10 [notice] 144566#144566: exiting
+2022/09/25 01:31:10 [notice] 144567#144567: exit
+2022/09/25 01:31:10 [notice] 144566#144566: exit
+2022/09/25 01:31:10 [notice] 144568#144568: gracefully shutting down
+2022/09/25 01:31:10 [notice] 144568#144568: exiting
+2022/09/25 01:31:10 [notice] 144568#144568: exit
+2022/09/25 01:31:10 [notice] 144569#144569: gracefully shutting down
+2022/09/25 01:31:10 [notice] 144569#144569: exiting
+2022/09/25 01:31:10 [notice] 144569#144569: exit
+2022/09/25 01:31:10 [notice] 26791#26791: signal 17 (SIGCHLD) received from 144568
+2022/09/25 01:31:10 [notice] 26791#26791: worker process 144567 exited with code 0
+2022/09/25 01:31:10 [notice] 26791#26791: worker process 144568 exited with code 0
+2022/09/25 01:31:10 [notice] 26791#26791: worker process 144569 exited with code 0
+2022/09/25 01:31:10 [notice] 26791#26791: worker process 144566 exited with code 0
+2022/09/25 01:31:10 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:31:10 [notice] 26791#26791: signal 17 (SIGCHLD) received from 144567
+2022/09/25 01:32:34 [notice] 26791#26791: signal 1 (SIGHUP) received from 145165, reconfiguring
+2022/09/25 01:32:34 [notice] 26791#26791: reconfiguring
+2022/09/25 01:32:34 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 01:32:34 [notice] 26791#26791: start worker processes
+2022/09/25 01:32:34 [notice] 26791#26791: start worker process 145166
+2022/09/25 01:32:34 [notice] 26791#26791: start worker process 145167
+2022/09/25 01:32:34 [notice] 26791#26791: start worker process 145168
+2022/09/25 01:32:34 [notice] 26791#26791: start worker process 145169
+2022/09/25 01:32:34 [notice] 144976#144976: gracefully shutting down
+2022/09/25 01:32:34 [notice] 144975#144975: gracefully shutting down
+2022/09/25 01:32:34 [notice] 144976#144976: exiting
+2022/09/25 01:32:34 [notice] 144975#144975: exiting
+2022/09/25 01:32:34 [notice] 144976#144976: exit
+2022/09/25 01:32:34 [notice] 144975#144975: exit
+2022/09/25 01:32:34 [notice] 144977#144977: gracefully shutting down
+2022/09/25 01:32:34 [notice] 144978#144978: gracefully shutting down
+2022/09/25 01:32:34 [notice] 144977#144977: exiting
+2022/09/25 01:32:34 [notice] 144978#144978: exiting
+2022/09/25 01:32:34 [notice] 144978#144978: exit
+2022/09/25 01:32:34 [notice] 144977#144977: exit
+2022/09/25 01:32:34 [notice] 26791#26791: signal 17 (SIGCHLD) received from 144975
+2022/09/25 01:32:34 [notice] 26791#26791: worker process 144975 exited with code 0
+2022/09/25 01:32:34 [notice] 26791#26791: worker process 144976 exited with code 0
+2022/09/25 01:32:34 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:32:34 [notice] 26791#26791: signal 17 (SIGCHLD) received from 144978
+2022/09/25 01:32:34 [notice] 26791#26791: worker process 144978 exited with code 0
+2022/09/25 01:32:34 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:32:34 [notice] 26791#26791: signal 17 (SIGCHLD) received from 144977
+2022/09/25 01:32:34 [notice] 26791#26791: worker process 144977 exited with code 0
+2022/09/25 01:32:34 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:33:36 [notice] 26791#26791: signal 1 (SIGHUP) received from 145316, reconfiguring
+2022/09/25 01:33:36 [notice] 26791#26791: reconfiguring
+2022/09/25 01:33:36 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 01:33:36 [notice] 26791#26791: start worker processes
+2022/09/25 01:33:36 [notice] 26791#26791: start worker process 145317
+2022/09/25 01:33:36 [notice] 26791#26791: start worker process 145318
+2022/09/25 01:33:36 [notice] 26791#26791: start worker process 145319
+2022/09/25 01:33:36 [notice] 26791#26791: start worker process 145320
+2022/09/25 01:33:36 [notice] 145167#145167: gracefully shutting down
+2022/09/25 01:33:36 [notice] 145166#145166: gracefully shutting down
+2022/09/25 01:33:36 [notice] 145167#145167: exiting
+2022/09/25 01:33:36 [notice] 145166#145166: exiting
+2022/09/25 01:33:36 [notice] 145166#145166: exit
+2022/09/25 01:33:36 [notice] 145167#145167: exit
+2022/09/25 01:33:36 [notice] 145168#145168: gracefully shutting down
+2022/09/25 01:33:36 [notice] 145168#145168: exiting
+2022/09/25 01:33:36 [notice] 145168#145168: exit
+2022/09/25 01:33:36 [notice] 145169#145169: gracefully shutting down
+2022/09/25 01:33:36 [notice] 145169#145169: exiting
+2022/09/25 01:33:36 [notice] 145169#145169: exit
+2022/09/25 01:33:36 [notice] 26791#26791: signal 17 (SIGCHLD) received from 145168
+2022/09/25 01:33:36 [notice] 26791#26791: worker process 145166 exited with code 0
+2022/09/25 01:33:36 [notice] 26791#26791: worker process 145167 exited with code 0
+2022/09/25 01:33:36 [notice] 26791#26791: worker process 145168 exited with code 0
+2022/09/25 01:33:36 [notice] 26791#26791: worker process 145169 exited with code 0
+2022/09/25 01:33:36 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:34:11 [notice] 26791#26791: signal 1 (SIGHUP) received from 145446, reconfiguring
+2022/09/25 01:34:11 [notice] 26791#26791: reconfiguring
+2022/09/25 01:34:11 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 01:34:11 [notice] 26791#26791: start worker processes
+2022/09/25 01:34:11 [notice] 26791#26791: start worker process 145447
+2022/09/25 01:34:11 [notice] 26791#26791: start worker process 145448
+2022/09/25 01:34:11 [notice] 26791#26791: start worker process 145449
+2022/09/25 01:34:11 [notice] 26791#26791: start worker process 145450
+2022/09/25 01:34:12 [notice] 145318#145318: gracefully shutting down
+2022/09/25 01:34:12 [notice] 145317#145317: gracefully shutting down
+2022/09/25 01:34:12 [notice] 145318#145318: exiting
+2022/09/25 01:34:12 [notice] 145317#145317: exiting
+2022/09/25 01:34:12 [notice] 145318#145318: exit
+2022/09/25 01:34:12 [notice] 145317#145317: exit
+2022/09/25 01:34:12 [notice] 145319#145319: gracefully shutting down
+2022/09/25 01:34:12 [notice] 145319#145319: exiting
+2022/09/25 01:34:12 [notice] 145320#145320: gracefully shutting down
+2022/09/25 01:34:12 [notice] 145320#145320: exiting
+2022/09/25 01:34:12 [notice] 145319#145319: exit
+2022/09/25 01:34:12 [notice] 145320#145320: exit
+2022/09/25 01:34:12 [notice] 26791#26791: signal 17 (SIGCHLD) received from 145317
+2022/09/25 01:34:12 [notice] 26791#26791: worker process 145317 exited with code 0
+2022/09/25 01:34:12 [notice] 26791#26791: worker process 145319 exited with code 0
+2022/09/25 01:34:12 [notice] 26791#26791: worker process 145320 exited with code 0
+2022/09/25 01:34:12 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:34:12 [notice] 26791#26791: signal 17 (SIGCHLD) received from 145318
+2022/09/25 01:34:12 [notice] 26791#26791: worker process 145318 exited with code 0
+2022/09/25 01:34:12 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:34:26 [notice] 26791#26791: signal 1 (SIGHUP) received from 145569, reconfiguring
+2022/09/25 01:34:26 [notice] 26791#26791: reconfiguring
+2022/09/25 01:34:26 [warn] 26791#26791: conflicting server name "www.test123.com" on 0.0.0.0:80, ignored
+2022/09/25 01:34:26 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 01:34:26 [notice] 26791#26791: start worker processes
+2022/09/25 01:34:26 [notice] 26791#26791: start worker process 145570
+2022/09/25 01:34:26 [notice] 26791#26791: start worker process 145571
+2022/09/25 01:34:26 [notice] 26791#26791: start worker process 145572
+2022/09/25 01:34:26 [notice] 26791#26791: start worker process 145573
+2022/09/25 01:34:26 [notice] 145448#145448: gracefully shutting down
+2022/09/25 01:34:26 [notice] 145447#145447: gracefully shutting down
+2022/09/25 01:34:26 [notice] 145448#145448: exiting
+2022/09/25 01:34:26 [notice] 145447#145447: exiting
+2022/09/25 01:34:26 [notice] 145448#145448: exit
+2022/09/25 01:34:26 [notice] 145447#145447: exit
+2022/09/25 01:34:26 [notice] 145449#145449: gracefully shutting down
+2022/09/25 01:34:26 [notice] 145450#145450: gracefully shutting down
+2022/09/25 01:34:26 [notice] 145449#145449: exiting
+2022/09/25 01:34:26 [notice] 145450#145450: exiting
+2022/09/25 01:34:26 [notice] 145450#145450: exit
+2022/09/25 01:34:26 [notice] 145449#145449: exit
+2022/09/25 01:34:26 [notice] 26791#26791: signal 17 (SIGCHLD) received from 145448
+2022/09/25 01:34:26 [notice] 26791#26791: worker process 145447 exited with code 0
+2022/09/25 01:34:26 [notice] 26791#26791: worker process 145448 exited with code 0
+2022/09/25 01:34:26 [notice] 26791#26791: worker process 145449 exited with code 0
+2022/09/25 01:34:26 [notice] 26791#26791: worker process 145450 exited with code 0
+2022/09/25 01:34:26 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:36:01 [error] 145570#145570: *12 "/home/wx/ng-m/ng-config/html/index.html" is not found (2: No such file or directory), client: 192.168.11.1, server: www.test.com, request: "GET / HTTP/1.1", host: "192.168.11.130"
+2022/09/25 01:37:05 [notice] 26791#26791: signal 1 (SIGHUP) received from 145983, reconfiguring
+2022/09/25 01:37:05 [notice] 26791#26791: reconfiguring
+2022/09/25 01:37:05 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 01:37:05 [notice] 26791#26791: start worker processes
+2022/09/25 01:37:05 [notice] 26791#26791: start worker process 145984
+2022/09/25 01:37:05 [notice] 26791#26791: start worker process 145985
+2022/09/25 01:37:05 [notice] 26791#26791: start worker process 145986
+2022/09/25 01:37:05 [notice] 26791#26791: start worker process 145987
+2022/09/25 01:37:06 [notice] 145571#145571: gracefully shutting down
+2022/09/25 01:37:06 [notice] 145570#145570: gracefully shutting down
+2022/09/25 01:37:06 [notice] 145571#145571: exiting
+2022/09/25 01:37:06 [notice] 145571#145571: exit
+2022/09/25 01:37:06 [notice] 145570#145570: exiting
+2022/09/25 01:37:06 [notice] 145570#145570: exit
+2022/09/25 01:37:06 [notice] 145572#145572: gracefully shutting down
+2022/09/25 01:37:06 [notice] 145573#145573: gracefully shutting down
+2022/09/25 01:37:06 [notice] 145573#145573: exiting
+2022/09/25 01:37:06 [notice] 145572#145572: exiting
+2022/09/25 01:37:06 [notice] 145573#145573: exit
+2022/09/25 01:37:06 [notice] 145572#145572: exit
+2022/09/25 01:37:06 [notice] 26791#26791: signal 17 (SIGCHLD) received from 145571
+2022/09/25 01:37:06 [notice] 26791#26791: worker process 145570 exited with code 0
+2022/09/25 01:37:06 [notice] 26791#26791: worker process 145571 exited with code 0
+2022/09/25 01:37:06 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:37:06 [notice] 26791#26791: signal 17 (SIGCHLD) received from 145572
+2022/09/25 01:37:06 [notice] 26791#26791: worker process 145572 exited with code 0
+2022/09/25 01:37:06 [notice] 26791#26791: worker process 145573 exited with code 0
+2022/09/25 01:37:06 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:37:08 [error] 145984#145984: *15 directory index of "/home/wx/ng-m/ng-config/domain/10/js/" is forbidden, client: 127.0.0.1, server: www.test123.com, request: "GET / HTTP/1.1", host: "www.test123.com"
+2022/09/25 01:37:33 [error] 145984#145984: *18 "/home/wx/ng-m/ng-config/html/index.html" is not found (2: No such file or directory), client: 192.168.11.1, server: www.test.com, request: "GET / HTTP/1.1", host: "192.168.11.130"
+2022/09/25 01:39:39 [error] 145986#145986: *19 "/home/wx/ng-m/ng-config/html/index.html" is not found (2: No such file or directory), client: 192.168.11.1, server: www.test.com, request: "GET / HTTP/1.1", host: "192.168.11.130"
+2022/09/25 01:40:04 [notice] 26791#26791: signal 1 (SIGHUP) received from 146165, reconfiguring
+2022/09/25 01:40:04 [notice] 26791#26791: reconfiguring
+2022/09/25 01:40:04 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 01:40:04 [notice] 26791#26791: start worker processes
+2022/09/25 01:40:04 [notice] 26791#26791: start worker process 146166
+2022/09/25 01:40:04 [notice] 26791#26791: start worker process 146167
+2022/09/25 01:40:04 [notice] 26791#26791: start worker process 146168
+2022/09/25 01:40:04 [notice] 26791#26791: start worker process 146169
+2022/09/25 01:40:05 [notice] 145984#145984: gracefully shutting down
+2022/09/25 01:40:05 [notice] 145986#145986: gracefully shutting down
+2022/09/25 01:40:05 [notice] 145985#145985: gracefully shutting down
+2022/09/25 01:40:05 [notice] 145985#145985: exiting
+2022/09/25 01:40:05 [notice] 145984#145984: exiting
+2022/09/25 01:40:05 [notice] 145985#145985: exit
+2022/09/25 01:40:05 [notice] 145984#145984: exit
+2022/09/25 01:40:05 [notice] 145987#145987: gracefully shutting down
+2022/09/25 01:40:05 [notice] 145986#145986: exiting
+2022/09/25 01:40:05 [notice] 145986#145986: exit
+2022/09/25 01:40:05 [notice] 26791#26791: signal 17 (SIGCHLD) received from 145986
+2022/09/25 01:40:05 [notice] 26791#26791: worker process 145986 exited with code 0
+2022/09/25 01:40:05 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:40:05 [notice] 26791#26791: signal 17 (SIGCHLD) received from 145985
+2022/09/25 01:40:05 [notice] 26791#26791: worker process 145984 exited with code 0
+2022/09/25 01:40:05 [notice] 26791#26791: worker process 145985 exited with code 0
+2022/09/25 01:40:05 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:40:05 [error] 145987#145987: *20 "/home/wx/ng-m/ng-config/html/index.html" is not found (2: No such file or directory), client: 192.168.11.1, server: www.test.com, request: "GET / HTTP/1.1", host: "192.168.11.130"
+2022/09/25 01:40:05 [notice] 145987#145987: exiting
+2022/09/25 01:40:05 [notice] 145987#145987: exit
+2022/09/25 01:40:05 [notice] 26791#26791: signal 17 (SIGCHLD) received from 145987
+2022/09/25 01:40:05 [notice] 26791#26791: worker process 145987 exited with code 0
+2022/09/25 01:40:05 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:41:22 [notice] 26791#26791: signal 1 (SIGHUP) received from 146242, reconfiguring
+2022/09/25 01:41:22 [notice] 26791#26791: reconfiguring
+2022/09/25 01:41:22 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 01:41:22 [notice] 26791#26791: start worker processes
+2022/09/25 01:41:22 [notice] 26791#26791: start worker process 146243
+2022/09/25 01:41:22 [notice] 26791#26791: start worker process 146244
+2022/09/25 01:41:22 [notice] 26791#26791: start worker process 146245
+2022/09/25 01:41:22 [notice] 26791#26791: start worker process 146246
+2022/09/25 01:41:22 [notice] 146167#146167: gracefully shutting down
+2022/09/25 01:41:22 [notice] 146166#146166: gracefully shutting down
+2022/09/25 01:41:22 [notice] 146167#146167: exiting
+2022/09/25 01:41:22 [notice] 146166#146166: exiting
+2022/09/25 01:41:22 [notice] 146167#146167: exit
+2022/09/25 01:41:22 [notice] 146166#146166: exit
+2022/09/25 01:41:22 [notice] 146169#146169: gracefully shutting down
+2022/09/25 01:41:22 [notice] 146168#146168: gracefully shutting down
+2022/09/25 01:41:22 [notice] 146169#146169: exiting
+2022/09/25 01:41:22 [notice] 146168#146168: exiting
+2022/09/25 01:41:22 [notice] 146169#146169: exit
+2022/09/25 01:41:22 [notice] 146168#146168: exit
+2022/09/25 01:41:22 [notice] 26791#26791: signal 17 (SIGCHLD) received from 146168
+2022/09/25 01:41:22 [notice] 26791#26791: worker process 146168 exited with code 0
+2022/09/25 01:41:22 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:41:22 [notice] 26791#26791: signal 17 (SIGCHLD) received from 146166
+2022/09/25 01:41:22 [notice] 26791#26791: worker process 146166 exited with code 0
+2022/09/25 01:41:22 [notice] 26791#26791: worker process 146167 exited with code 0
+2022/09/25 01:41:22 [notice] 26791#26791: worker process 146169 exited with code 0
+2022/09/25 01:41:22 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:47:20 [notice] 26791#26791: signal 1 (SIGHUP) received from 146619, reconfiguring
+2022/09/25 01:47:20 [notice] 26791#26791: reconfiguring
+2022/09/25 01:47:20 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 01:47:20 [notice] 26791#26791: start worker processes
+2022/09/25 01:47:20 [notice] 26791#26791: start worker process 146620
+2022/09/25 01:47:20 [notice] 26791#26791: start worker process 146621
+2022/09/25 01:47:20 [notice] 26791#26791: start worker process 146622
+2022/09/25 01:47:20 [notice] 26791#26791: start worker process 146623
+2022/09/25 01:47:20 [notice] 146243#146243: gracefully shutting down
+2022/09/25 01:47:20 [notice] 146243#146243: exiting
+2022/09/25 01:47:20 [notice] 146245#146245: gracefully shutting down
+2022/09/25 01:47:20 [notice] 146245#146245: exiting
+2022/09/25 01:47:20 [notice] 146243#146243: exit
+2022/09/25 01:47:20 [notice] 146246#146246: gracefully shutting down
+2022/09/25 01:47:20 [notice] 146245#146245: exit
+2022/09/25 01:47:20 [notice] 146246#146246: exiting
+2022/09/25 01:47:20 [notice] 146244#146244: gracefully shutting down
+2022/09/25 01:47:20 [notice] 146244#146244: exiting
+2022/09/25 01:47:20 [notice] 146246#146246: exit
+2022/09/25 01:47:20 [notice] 146244#146244: exit
+2022/09/25 01:47:21 [notice] 26791#26791: signal 17 (SIGCHLD) received from 146243
+2022/09/25 01:47:21 [notice] 26791#26791: worker process 146243 exited with code 0
+2022/09/25 01:47:21 [notice] 26791#26791: worker process 146244 exited with code 0
+2022/09/25 01:47:21 [notice] 26791#26791: worker process 146245 exited with code 0
+2022/09/25 01:47:21 [notice] 26791#26791: worker process 146246 exited with code 0
+2022/09/25 01:47:21 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:53:14 [notice] 26791#26791: signal 1 (SIGHUP) received from 146810, reconfiguring
+2022/09/25 01:53:14 [notice] 26791#26791: reconfiguring
+2022/09/25 01:53:14 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 01:53:14 [notice] 26791#26791: start worker processes
+2022/09/25 01:53:14 [notice] 26791#26791: start worker process 146811
+2022/09/25 01:53:14 [notice] 26791#26791: start worker process 146812
+2022/09/25 01:53:14 [notice] 26791#26791: start worker process 146813
+2022/09/25 01:53:14 [notice] 26791#26791: start worker process 146814
+2022/09/25 01:53:14 [notice] 146621#146621: gracefully shutting down
+2022/09/25 01:53:14 [notice] 146620#146620: gracefully shutting down
+2022/09/25 01:53:14 [notice] 146621#146621: exiting
+2022/09/25 01:53:14 [notice] 146621#146621: exit
+2022/09/25 01:53:14 [notice] 146623#146623: gracefully shutting down
+2022/09/25 01:53:14 [notice] 146622#146622: gracefully shutting down
+2022/09/25 01:53:14 [notice] 146622#146622: exiting
+2022/09/25 01:53:14 [notice] 146623#146623: exiting
+2022/09/25 01:53:14 [notice] 146622#146622: exit
+2022/09/25 01:53:14 [notice] 146623#146623: exit
+2022/09/25 01:53:14 [notice] 26791#26791: signal 17 (SIGCHLD) received from 146623
+2022/09/25 01:53:14 [notice] 26791#26791: worker process 146623 exited with code 0
+2022/09/25 01:53:14 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:53:14 [notice] 26791#26791: signal 17 (SIGCHLD) received from 146622
+2022/09/25 01:53:14 [notice] 26791#26791: worker process 146621 exited with code 0
+2022/09/25 01:53:14 [notice] 26791#26791: worker process 146622 exited with code 0
+2022/09/25 01:53:14 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 01:53:58 [notice] 146620#146620: exiting
+2022/09/25 01:53:58 [notice] 146620#146620: exit
+2022/09/25 01:53:58 [notice] 26791#26791: signal 17 (SIGCHLD) received from 146620
+2022/09/25 01:53:58 [notice] 26791#26791: worker process 146620 exited with code 0
+2022/09/25 01:53:58 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:09:38 [notice] 26791#26791: signal 1 (SIGHUP) received from 147033, reconfiguring
+2022/09/25 02:09:38 [notice] 26791#26791: reconfiguring
+2022/09/25 02:09:38 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 02:09:38 [notice] 26791#26791: start worker processes
+2022/09/25 02:09:38 [notice] 26791#26791: start worker process 147034
+2022/09/25 02:09:38 [notice] 26791#26791: start worker process 147035
+2022/09/25 02:09:38 [notice] 26791#26791: start worker process 147036
+2022/09/25 02:09:38 [notice] 26791#26791: start worker process 147037
+2022/09/25 02:09:38 [notice] 146812#146812: gracefully shutting down
+2022/09/25 02:09:38 [notice] 146811#146811: gracefully shutting down
+2022/09/25 02:09:38 [notice] 146812#146812: exiting
+2022/09/25 02:09:38 [notice] 146811#146811: exiting
+2022/09/25 02:09:38 [notice] 146812#146812: exit
+2022/09/25 02:09:38 [notice] 146811#146811: exit
+2022/09/25 02:09:38 [notice] 146814#146814: gracefully shutting down
+2022/09/25 02:09:38 [notice] 146813#146813: gracefully shutting down
+2022/09/25 02:09:38 [notice] 146813#146813: exiting
+2022/09/25 02:09:38 [notice] 146813#146813: exit
+2022/09/25 02:09:38 [notice] 26791#26791: signal 17 (SIGCHLD) received from 146811
+2022/09/25 02:09:38 [notice] 26791#26791: worker process 146811 exited with code 0
+2022/09/25 02:09:38 [notice] 26791#26791: worker process 146813 exited with code 0
+2022/09/25 02:09:38 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:09:38 [notice] 26791#26791: signal 17 (SIGCHLD) received from 146812
+2022/09/25 02:09:38 [notice] 26791#26791: worker process 146812 exited with code 0
+2022/09/25 02:09:38 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:09:39 [notice] 146814#146814: exiting
+2022/09/25 02:09:39 [notice] 146814#146814: exit
+2022/09/25 02:09:40 [notice] 26791#26791: signal 17 (SIGCHLD) received from 146814
+2022/09/25 02:09:40 [notice] 26791#26791: worker process 146814 exited with code 0
+2022/09/25 02:09:40 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:10:27 [notice] 26791#26791: signal 1 (SIGHUP) received from 147157, reconfiguring
+2022/09/25 02:10:27 [notice] 26791#26791: reconfiguring
+2022/09/25 02:10:27 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 02:10:27 [notice] 26791#26791: start worker processes
+2022/09/25 02:10:27 [notice] 26791#26791: start worker process 147158
+2022/09/25 02:10:27 [notice] 26791#26791: start worker process 147159
+2022/09/25 02:10:27 [notice] 26791#26791: start worker process 147160
+2022/09/25 02:10:27 [notice] 26791#26791: start worker process 147161
+2022/09/25 02:10:27 [notice] 147036#147036: gracefully shutting down
+2022/09/25 02:10:27 [notice] 147034#147034: gracefully shutting down
+2022/09/25 02:10:27 [notice] 147035#147035: gracefully shutting down
+2022/09/25 02:10:27 [notice] 147035#147035: exiting
+2022/09/25 02:10:27 [notice] 147034#147034: exiting
+2022/09/25 02:10:27 [notice] 147035#147035: exit
+2022/09/25 02:10:27 [notice] 147034#147034: exit
+2022/09/25 02:10:27 [notice] 147037#147037: gracefully shutting down
+2022/09/25 02:10:27 [notice] 147037#147037: exiting
+2022/09/25 02:10:27 [notice] 147037#147037: exit
+2022/09/25 02:10:27 [notice] 26791#26791: signal 17 (SIGCHLD) received from 147034
+2022/09/25 02:10:27 [notice] 26791#26791: worker process 147034 exited with code 0
+2022/09/25 02:10:27 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:10:27 [notice] 26791#26791: signal 17 (SIGCHLD) received from 147035
+2022/09/25 02:10:27 [notice] 26791#26791: worker process 147035 exited with code 0
+2022/09/25 02:10:27 [notice] 26791#26791: worker process 147037 exited with code 0
+2022/09/25 02:10:27 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:10:29 [notice] 147036#147036: exiting
+2022/09/25 02:10:29 [notice] 147036#147036: exit
+2022/09/25 02:10:29 [notice] 26791#26791: signal 17 (SIGCHLD) received from 147036
+2022/09/25 02:10:29 [notice] 26791#26791: worker process 147036 exited with code 0
+2022/09/25 02:10:29 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:15:04 [notice] 26791#26791: signal 1 (SIGHUP) received from 147301, reconfiguring
+2022/09/25 02:15:04 [notice] 26791#26791: reconfiguring
+2022/09/25 02:15:04 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 02:15:04 [notice] 26791#26791: start worker processes
+2022/09/25 02:15:04 [notice] 26791#26791: start worker process 147302
+2022/09/25 02:15:04 [notice] 26791#26791: start worker process 147303
+2022/09/25 02:15:04 [notice] 26791#26791: start worker process 147304
+2022/09/25 02:15:04 [notice] 26791#26791: start worker process 147305
+2022/09/25 02:15:04 [notice] 147159#147159: gracefully shutting down
+2022/09/25 02:15:04 [notice] 147158#147158: gracefully shutting down
+2022/09/25 02:15:04 [notice] 147159#147159: exiting
+2022/09/25 02:15:04 [notice] 147158#147158: exiting
+2022/09/25 02:15:04 [notice] 147159#147159: exit
+2022/09/25 02:15:04 [notice] 147158#147158: exit
+2022/09/25 02:15:04 [notice] 147160#147160: gracefully shutting down
+2022/09/25 02:15:04 [notice] 147161#147161: gracefully shutting down
+2022/09/25 02:15:04 [notice] 147160#147160: exiting
+2022/09/25 02:15:04 [notice] 147161#147161: exiting
+2022/09/25 02:15:04 [notice] 147160#147160: exit
+2022/09/25 02:15:04 [notice] 147161#147161: exit
+2022/09/25 02:15:04 [notice] 26791#26791: signal 17 (SIGCHLD) received from 147160
+2022/09/25 02:15:04 [notice] 26791#26791: worker process 147158 exited with code 0
+2022/09/25 02:15:04 [notice] 26791#26791: worker process 147159 exited with code 0
+2022/09/25 02:15:04 [notice] 26791#26791: worker process 147160 exited with code 0
+2022/09/25 02:15:04 [notice] 26791#26791: worker process 147161 exited with code 0
+2022/09/25 02:15:04 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:15:04 [notice] 26791#26791: signal 17 (SIGCHLD) received from 147159
+2022/09/25 02:16:13 [notice] 26791#26791: signal 1 (SIGHUP) received from 147415, reconfiguring
+2022/09/25 02:16:13 [notice] 26791#26791: reconfiguring
+2022/09/25 02:16:13 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 02:16:13 [notice] 26791#26791: start worker processes
+2022/09/25 02:16:13 [notice] 26791#26791: start worker process 147416
+2022/09/25 02:16:13 [notice] 26791#26791: start worker process 147417
+2022/09/25 02:16:13 [notice] 26791#26791: start worker process 147418
+2022/09/25 02:16:13 [notice] 26791#26791: start worker process 147419
+2022/09/25 02:16:13 [notice] 147305#147305: gracefully shutting down
+2022/09/25 02:16:13 [notice] 147302#147302: gracefully shutting down
+2022/09/25 02:16:13 [notice] 147303#147303: gracefully shutting down
+2022/09/25 02:16:13 [notice] 147304#147304: gracefully shutting down
+2022/09/25 02:16:13 [notice] 147305#147305: exiting
+2022/09/25 02:16:13 [notice] 147302#147302: exiting
+2022/09/25 02:16:13 [notice] 147303#147303: exiting
+2022/09/25 02:16:13 [notice] 147304#147304: exiting
+2022/09/25 02:16:13 [notice] 147303#147303: exit
+2022/09/25 02:16:13 [notice] 147305#147305: exit
+2022/09/25 02:16:13 [notice] 147304#147304: exit
+2022/09/25 02:16:13 [notice] 147302#147302: exit
+2022/09/25 02:16:13 [notice] 26791#26791: signal 17 (SIGCHLD) received from 147303
+2022/09/25 02:16:13 [notice] 26791#26791: worker process 147302 exited with code 0
+2022/09/25 02:16:13 [notice] 26791#26791: worker process 147303 exited with code 0
+2022/09/25 02:16:13 [notice] 26791#26791: worker process 147305 exited with code 0
+2022/09/25 02:16:13 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:16:13 [notice] 26791#26791: signal 17 (SIGCHLD) received from 147304
+2022/09/25 02:16:13 [notice] 26791#26791: worker process 147304 exited with code 0
+2022/09/25 02:16:13 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:17:00 [notice] 26791#26791: signal 1 (SIGHUP) received from 147580, reconfiguring
+2022/09/25 02:17:00 [notice] 26791#26791: reconfiguring
+2022/09/25 02:17:00 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 02:17:00 [notice] 26791#26791: start worker processes
+2022/09/25 02:17:00 [notice] 26791#26791: start worker process 147581
+2022/09/25 02:17:00 [notice] 26791#26791: start worker process 147582
+2022/09/25 02:17:00 [notice] 26791#26791: start worker process 147583
+2022/09/25 02:17:00 [notice] 26791#26791: start worker process 147584
+2022/09/25 02:17:00 [notice] 147418#147418: gracefully shutting down
+2022/09/25 02:17:00 [notice] 147416#147416: gracefully shutting down
+2022/09/25 02:17:00 [notice] 147417#147417: gracefully shutting down
+2022/09/25 02:17:00 [notice] 147418#147418: exiting
+2022/09/25 02:17:00 [notice] 147416#147416: exiting
+2022/09/25 02:17:00 [notice] 147417#147417: exiting
+2022/09/25 02:17:00 [notice] 147416#147416: exit
+2022/09/25 02:17:00 [notice] 147418#147418: exit
+2022/09/25 02:17:00 [notice] 147417#147417: exit
+2022/09/25 02:17:00 [notice] 147419#147419: gracefully shutting down
+2022/09/25 02:17:00 [notice] 147419#147419: exiting
+2022/09/25 02:17:00 [notice] 147419#147419: exit
+2022/09/25 02:17:00 [notice] 26791#26791: signal 17 (SIGCHLD) received from 147418
+2022/09/25 02:17:00 [notice] 26791#26791: worker process 147416 exited with code 0
+2022/09/25 02:17:00 [notice] 26791#26791: worker process 147418 exited with code 0
+2022/09/25 02:17:00 [notice] 26791#26791: worker process 147419 exited with code 0
+2022/09/25 02:17:00 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:17:00 [notice] 26791#26791: signal 17 (SIGCHLD) received from 147417
+2022/09/25 02:17:00 [notice] 26791#26791: worker process 147417 exited with code 0
+2022/09/25 02:17:00 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:20:24 [notice] 26791#26791: signal 1 (SIGHUP) received from 147872, reconfiguring
+2022/09/25 02:20:24 [notice] 26791#26791: reconfiguring
+2022/09/25 02:20:24 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 02:20:24 [notice] 26791#26791: start worker processes
+2022/09/25 02:20:24 [notice] 26791#26791: start worker process 147873
+2022/09/25 02:20:24 [notice] 26791#26791: start worker process 147874
+2022/09/25 02:20:24 [notice] 26791#26791: start worker process 147875
+2022/09/25 02:20:24 [notice] 26791#26791: start worker process 147876
+2022/09/25 02:20:24 [notice] 147581#147581: gracefully shutting down
+2022/09/25 02:20:24 [notice] 147582#147582: gracefully shutting down
+2022/09/25 02:20:24 [notice] 147583#147583: gracefully shutting down
+2022/09/25 02:20:24 [notice] 147582#147582: exiting
+2022/09/25 02:20:24 [notice] 147583#147583: exiting
+2022/09/25 02:20:24 [notice] 147581#147581: exiting
+2022/09/25 02:20:24 [notice] 147582#147582: exit
+2022/09/25 02:20:24 [notice] 147583#147583: exit
+2022/09/25 02:20:24 [notice] 147581#147581: exit
+2022/09/25 02:20:24 [notice] 147584#147584: gracefully shutting down
+2022/09/25 02:20:24 [notice] 147584#147584: exiting
+2022/09/25 02:20:24 [notice] 147584#147584: exit
+2022/09/25 02:20:24 [notice] 26791#26791: signal 17 (SIGCHLD) received from 147583
+2022/09/25 02:20:24 [notice] 26791#26791: worker process 147581 exited with code 0
+2022/09/25 02:20:24 [notice] 26791#26791: worker process 147582 exited with code 0
+2022/09/25 02:20:24 [notice] 26791#26791: worker process 147583 exited with code 0
+2022/09/25 02:20:24 [notice] 26791#26791: worker process 147584 exited with code 0
+2022/09/25 02:20:24 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:35:35 [error] 147876#147876: *47 open() "/nginx-1.23.1/1234/conf/win-utf" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/conf/win-utf HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:35:47 [error] 147873#147873: *48 open() "/nginx-1.23.1/1234/conf/fastcgi.conf" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/conf/fastcgi.conf HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:35:59 [error] 147875#147875: *49 open() "/nginx-1.23.1/1234/conf/fastcgi.conf" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/conf/fastcgi.conf HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:36:14 [error] 147875#147875: *50 open() "/nginx-1.23.1/1234" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234 HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:36:18 [error] 147875#147875: *51 "/nginx-1.23.1/1234/index.html" is not found (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/ HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:36:22 [error] 147875#147875: *52 open() "/nginx-1.23.1/1234/docs" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/docs HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:36:29 [error] 147875#147875: *53 open() "/nginx-1.23.1/1234/html" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:36:33 [error] 147875#147875: *54 open() "/nginx-1.23.1/1234/html/index.html" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/html/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:37:01 [error] 147875#147875: *55 open() "/nginx-1.23.1/1234/html/index.html" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/html/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:37:26 [error] 147875#147875: *56 "/nginx-1.23.1/1234/index.html" is not found (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/ HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:37:38 [error] 147875#147875: *57 open() "/nginx-1.23.1/1234/html/index.html" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/html/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:39:43 [error] 147875#147875: *60 open() "/nginx-1.23.1/1234/html/index.html" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/html/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:40:17 [error] 147875#147875: *61 open() "/nginx-1.23.1/1234" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234 HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:40:25 [error] 147875#147875: *62 open() "/nginx-1.23.1/1234" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234 HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:40:29 [error] 147875#147875: *63 open() "/nginx-1.23.1/1234/index.html" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:41:48 [error] 147875#147875: *64 open() "/nginx-1.23.1/1234/assets/host01.png" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/assets/host01.png HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:42:14 [error] 147874#147874: *65 open() "/nginx-1.23.1/1234/log,js" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/log,js HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:42:33 [error] 147874#147874: *66 open() "/nginx-1.23.1/1234/index.html" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:43:43 [error] 147874#147874: *67 open() "/nginx-1.23.1/1234/index.html" failed (2: No such file or directory), client: 192.168.11.1, server: www.test123.com, request: "GET /1234/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:44:09 [error] 147874#147874: *68 open() "/nginx-1.23.1/1234/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /1234/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:44:28 [notice] 26791#26791: signal 1 (SIGHUP) received from 150859, reconfiguring
+2022/09/25 02:44:28 [notice] 26791#26791: reconfiguring
+2022/09/25 02:44:28 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 02:44:28 [notice] 26791#26791: start worker processes
+2022/09/25 02:44:28 [notice] 26791#26791: start worker process 150860
+2022/09/25 02:44:28 [notice] 26791#26791: start worker process 150861
+2022/09/25 02:44:28 [notice] 26791#26791: start worker process 150862
+2022/09/25 02:44:28 [notice] 26791#26791: start worker process 150863
+2022/09/25 02:44:28 [notice] 147873#147873: gracefully shutting down
+2022/09/25 02:44:28 [notice] 147875#147875: gracefully shutting down
+2022/09/25 02:44:28 [notice] 147874#147874: gracefully shutting down
+2022/09/25 02:44:28 [notice] 147873#147873: exiting
+2022/09/25 02:44:28 [notice] 147875#147875: exiting
+2022/09/25 02:44:28 [notice] 147874#147874: exiting
+2022/09/25 02:44:28 [notice] 147875#147875: exit
+2022/09/25 02:44:28 [notice] 147876#147876: gracefully shutting down
+2022/09/25 02:44:28 [notice] 147876#147876: exiting
+2022/09/25 02:44:28 [notice] 147874#147874: exit
+2022/09/25 02:44:28 [notice] 147876#147876: exit
+2022/09/25 02:44:28 [notice] 147873#147873: exit
+2022/09/25 02:44:28 [notice] 26791#26791: signal 17 (SIGCHLD) received from 147876
+2022/09/25 02:44:28 [notice] 26791#26791: worker process 147873 exited with code 0
+2022/09/25 02:44:28 [notice] 26791#26791: worker process 147874 exited with code 0
+2022/09/25 02:44:28 [notice] 26791#26791: worker process 147875 exited with code 0
+2022/09/25 02:44:28 [notice] 26791#26791: worker process 147876 exited with code 0
+2022/09/25 02:44:28 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:45:22 [notice] 26791#26791: signal 1 (SIGHUP) received from 151044, reconfiguring
+2022/09/25 02:45:22 [notice] 26791#26791: reconfiguring
+2022/09/25 02:45:22 [notice] 26791#26791: using the "epoll" event method
+2022/09/25 02:45:22 [notice] 26791#26791: start worker processes
+2022/09/25 02:45:22 [notice] 26791#26791: start worker process 151045
+2022/09/25 02:45:22 [notice] 26791#26791: start worker process 151046
+2022/09/25 02:45:22 [notice] 26791#26791: start worker process 151047
+2022/09/25 02:45:22 [notice] 26791#26791: start worker process 151048
+2022/09/25 02:45:22 [notice] 150860#150860: gracefully shutting down
+2022/09/25 02:45:22 [notice] 150861#150861: gracefully shutting down
+2022/09/25 02:45:22 [notice] 150863#150863: gracefully shutting down
+2022/09/25 02:45:22 [notice] 150862#150862: gracefully shutting down
+2022/09/25 02:45:22 [notice] 150860#150860: exiting
+2022/09/25 02:45:22 [notice] 150861#150861: exiting
+2022/09/25 02:45:22 [notice] 150863#150863: exiting
+2022/09/25 02:45:22 [notice] 150862#150862: exiting
+2022/09/25 02:45:22 [notice] 150861#150861: exit
+2022/09/25 02:45:22 [notice] 150863#150863: exit
+2022/09/25 02:45:22 [notice] 150862#150862: exit
+2022/09/25 02:45:22 [notice] 150860#150860: exit
+2022/09/25 02:45:22 [notice] 26791#26791: signal 17 (SIGCHLD) received from 150861
+2022/09/25 02:45:22 [notice] 26791#26791: worker process 150861 exited with code 0
+2022/09/25 02:45:22 [notice] 26791#26791: worker process 150862 exited with code 0
+2022/09/25 02:45:22 [notice] 26791#26791: worker process 150863 exited with code 0
+2022/09/25 02:45:22 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:45:22 [notice] 26791#26791: signal 17 (SIGCHLD) received from 150860
+2022/09/25 02:45:22 [notice] 26791#26791: worker process 150860 exited with code 0
+2022/09/25 02:45:22 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:46:04 [notice] 26791#26791: signal 15 (SIGTERM) received from 151182, exiting
+2022/09/25 02:46:04 [notice] 151046#151046: exiting
+2022/09/25 02:46:04 [notice] 151047#151047: exiting
+2022/09/25 02:46:04 [notice] 151046#151046: exit
+2022/09/25 02:46:04 [notice] 151047#151047: exit
+2022/09/25 02:46:04 [notice] 151045#151045: exiting
+2022/09/25 02:46:04 [notice] 151045#151045: exit
+2022/09/25 02:46:04 [notice] 151048#151048: exiting
+2022/09/25 02:46:04 [notice] 151048#151048: exit
+2022/09/25 02:46:04 [notice] 26791#26791: signal 17 (SIGCHLD) received from 151046
+2022/09/25 02:46:04 [notice] 26791#26791: worker process 151046 exited with code 0
+2022/09/25 02:46:04 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:46:04 [notice] 26791#26791: signal 17 (SIGCHLD) received from 151048
+2022/09/25 02:46:04 [notice] 26791#26791: worker process 151045 exited with code 0
+2022/09/25 02:46:04 [notice] 26791#26791: worker process 151048 exited with code 0
+2022/09/25 02:46:04 [notice] 26791#26791: signal 29 (SIGIO) received
+2022/09/25 02:46:04 [notice] 26791#26791: signal 17 (SIGCHLD) received from 151047
+2022/09/25 02:46:04 [notice] 26791#26791: worker process 151047 exited with code 0
+2022/09/25 02:46:04 [notice] 26791#26791: exit
+2022/09/25 02:46:06 [notice] 151211#151211: using the "epoll" event method
+2022/09/25 02:46:06 [notice] 151211#151211: nginx/1.22.0
+2022/09/25 02:46:06 [notice] 151211#151211: built by gcc 11.2.0 (Ubuntu 11.2.0-19ubuntu1) 
+2022/09/25 02:46:06 [notice] 151211#151211: OS: Linux 5.15.0-47-generic
+2022/09/25 02:46:06 [notice] 151211#151211: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/09/25 02:46:06 [notice] 151212#151212: start worker processes
+2022/09/25 02:46:06 [notice] 151212#151212: start worker process 151213
+2022/09/25 02:46:06 [notice] 151212#151212: start worker process 151214
+2022/09/25 02:46:06 [notice] 151212#151212: start worker process 151215
+2022/09/25 02:46:06 [notice] 151212#151212: start worker process 151216
+2022/09/25 02:46:44 [notice] 151212#151212: signal 15 (SIGTERM) received from 151328, exiting
+2022/09/25 02:46:44 [notice] 151215#151215: exiting
+2022/09/25 02:46:44 [notice] 151213#151213: exiting
+2022/09/25 02:46:44 [notice] 151216#151216: exiting
+2022/09/25 02:46:44 [notice] 151215#151215: exit
+2022/09/25 02:46:44 [notice] 151213#151213: exit
+2022/09/25 02:46:44 [notice] 151216#151216: exit
+2022/09/25 02:46:44 [notice] 151214#151214: exiting
+2022/09/25 02:46:44 [notice] 151214#151214: exit
+2022/09/25 02:46:44 [notice] 151212#151212: signal 17 (SIGCHLD) received from 151215
+2022/09/25 02:46:44 [notice] 151212#151212: worker process 151215 exited with code 0
+2022/09/25 02:46:44 [notice] 151212#151212: worker process 151216 exited with code 0
+2022/09/25 02:46:44 [notice] 151212#151212: signal 29 (SIGIO) received
+2022/09/25 02:46:44 [notice] 151212#151212: signal 17 (SIGCHLD) received from 151213
+2022/09/25 02:46:44 [notice] 151212#151212: worker process 151213 exited with code 0
+2022/09/25 02:46:44 [notice] 151212#151212: signal 17 (SIGCHLD) received from 151214
+2022/09/25 02:46:44 [notice] 151212#151212: worker process 151214 exited with code 0
+2022/09/25 02:46:44 [notice] 151212#151212: exit
+2022/09/25 02:46:59 [notice] 151421#151421: using the "epoll" event method
+2022/09/25 02:46:59 [notice] 151421#151421: nginx/1.22.0
+2022/09/25 02:46:59 [notice] 151421#151421: built by gcc 11.2.0 (Ubuntu 11.2.0-19ubuntu1) 
+2022/09/25 02:46:59 [notice] 151421#151421: OS: Linux 5.15.0-47-generic
+2022/09/25 02:46:59 [notice] 151421#151421: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/09/25 02:46:59 [notice] 151422#151422: start worker processes
+2022/09/25 02:46:59 [notice] 151422#151422: start worker process 151423
+2022/09/25 02:46:59 [notice] 151422#151422: start worker process 151424
+2022/09/25 02:46:59 [notice] 151422#151422: start worker process 151425
+2022/09/25 02:46:59 [notice] 151422#151422: start worker process 151426
+2022/09/25 02:47:29 [notice] 151422#151422: signal 1 (SIGHUP) received from 151512, reconfiguring
+2022/09/25 02:47:29 [notice] 151422#151422: reconfiguring
+2022/09/25 02:47:29 [notice] 151422#151422: using the "epoll" event method
+2022/09/25 02:47:29 [notice] 151422#151422: start worker processes
+2022/09/25 02:47:29 [notice] 151422#151422: start worker process 151513
+2022/09/25 02:47:29 [notice] 151422#151422: start worker process 151514
+2022/09/25 02:47:29 [notice] 151422#151422: start worker process 151515
+2022/09/25 02:47:29 [notice] 151422#151422: start worker process 151516
+2022/09/25 02:47:29 [notice] 151423#151423: gracefully shutting down
+2022/09/25 02:47:29 [notice] 151426#151426: gracefully shutting down
+2022/09/25 02:47:29 [notice] 151423#151423: exiting
+2022/09/25 02:47:29 [notice] 151426#151426: exiting
+2022/09/25 02:47:29 [notice] 151425#151425: gracefully shutting down
+2022/09/25 02:47:29 [notice] 151424#151424: gracefully shutting down
+2022/09/25 02:47:29 [notice] 151425#151425: exiting
+2022/09/25 02:47:29 [notice] 151424#151424: exiting
+2022/09/25 02:47:29 [notice] 151423#151423: exit
+2022/09/25 02:47:29 [notice] 151426#151426: exit
+2022/09/25 02:47:29 [notice] 151424#151424: exit
+2022/09/25 02:47:29 [notice] 151425#151425: exit
+2022/09/25 02:47:29 [notice] 151422#151422: signal 17 (SIGCHLD) received from 151425
+2022/09/25 02:47:29 [notice] 151422#151422: worker process 151424 exited with code 0
+2022/09/25 02:47:29 [notice] 151422#151422: worker process 151425 exited with code 0
+2022/09/25 02:47:29 [notice] 151422#151422: worker process 151426 exited with code 0
+2022/09/25 02:47:29 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:47:29 [notice] 151422#151422: signal 17 (SIGCHLD) received from 151424
+2022/09/25 02:47:29 [notice] 151422#151422: worker process 151423 exited with code 0
+2022/09/25 02:47:29 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:47:43 [error] 151516#151516: *3 open() "/usr/share/nginx/html/test/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /test/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:47:56 [notice] 151422#151422: signal 1 (SIGHUP) received from 151660, reconfiguring
+2022/09/25 02:47:56 [notice] 151422#151422: reconfiguring
+2022/09/25 02:47:56 [notice] 151422#151422: using the "epoll" event method
+2022/09/25 02:47:56 [notice] 151422#151422: start worker processes
+2022/09/25 02:47:56 [notice] 151422#151422: start worker process 151661
+2022/09/25 02:47:56 [notice] 151422#151422: start worker process 151662
+2022/09/25 02:47:56 [notice] 151422#151422: start worker process 151663
+2022/09/25 02:47:56 [notice] 151422#151422: start worker process 151664
+2022/09/25 02:47:56 [notice] 151513#151513: gracefully shutting down
+2022/09/25 02:47:56 [notice] 151514#151514: gracefully shutting down
+2022/09/25 02:47:56 [notice] 151516#151516: gracefully shutting down
+2022/09/25 02:47:56 [notice] 151513#151513: exiting
+2022/09/25 02:47:56 [notice] 151514#151514: exiting
+2022/09/25 02:47:56 [notice] 151515#151515: gracefully shutting down
+2022/09/25 02:47:56 [notice] 151516#151516: exiting
+2022/09/25 02:47:56 [notice] 151515#151515: exiting
+2022/09/25 02:47:56 [notice] 151513#151513: exit
+2022/09/25 02:47:56 [notice] 151516#151516: exit
+2022/09/25 02:47:56 [notice] 151514#151514: exit
+2022/09/25 02:47:56 [notice] 151515#151515: exit
+2022/09/25 02:47:56 [notice] 151422#151422: signal 17 (SIGCHLD) received from 151513
+2022/09/25 02:47:56 [notice] 151422#151422: worker process 151513 exited with code 0
+2022/09/25 02:47:56 [notice] 151422#151422: worker process 151514 exited with code 0
+2022/09/25 02:47:56 [notice] 151422#151422: worker process 151516 exited with code 0
+2022/09/25 02:47:56 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:47:56 [notice] 151422#151422: signal 17 (SIGCHLD) received from 151516
+2022/09/25 02:47:56 [notice] 151422#151422: signal 17 (SIGCHLD) received from 151515
+2022/09/25 02:47:56 [notice] 151422#151422: worker process 151515 exited with code 0
+2022/09/25 02:47:56 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:47:58 [error] 151661#151661: *4 open() "/usr/share/nginx/html/test/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /test/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:48:03 [notice] 151422#151422: signal 1 (SIGHUP) received from 151728, reconfiguring
+2022/09/25 02:48:03 [notice] 151422#151422: reconfiguring
+2022/09/25 02:48:03 [notice] 151422#151422: using the "epoll" event method
+2022/09/25 02:48:03 [notice] 151422#151422: start worker processes
+2022/09/25 02:48:03 [notice] 151422#151422: start worker process 151729
+2022/09/25 02:48:03 [notice] 151422#151422: start worker process 151730
+2022/09/25 02:48:03 [notice] 151422#151422: start worker process 151731
+2022/09/25 02:48:03 [notice] 151422#151422: start worker process 151732
+2022/09/25 02:48:03 [notice] 151661#151661: gracefully shutting down
+2022/09/25 02:48:03 [notice] 151663#151663: gracefully shutting down
+2022/09/25 02:48:03 [notice] 151661#151661: exiting
+2022/09/25 02:48:03 [notice] 151663#151663: exiting
+2022/09/25 02:48:03 [notice] 151662#151662: gracefully shutting down
+2022/09/25 02:48:03 [notice] 151662#151662: exiting
+2022/09/25 02:48:03 [notice] 151661#151661: exit
+2022/09/25 02:48:03 [notice] 151663#151663: exit
+2022/09/25 02:48:03 [notice] 151662#151662: exit
+2022/09/25 02:48:03 [notice] 151664#151664: gracefully shutting down
+2022/09/25 02:48:03 [notice] 151664#151664: exiting
+2022/09/25 02:48:03 [notice] 151664#151664: exit
+2022/09/25 02:48:03 [notice] 151422#151422: signal 17 (SIGCHLD) received from 151661
+2022/09/25 02:48:03 [notice] 151422#151422: worker process 151661 exited with code 0
+2022/09/25 02:48:03 [notice] 151422#151422: worker process 151662 exited with code 0
+2022/09/25 02:48:03 [notice] 151422#151422: worker process 151663 exited with code 0
+2022/09/25 02:48:03 [notice] 151422#151422: worker process 151664 exited with code 0
+2022/09/25 02:48:03 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:48:03 [notice] 151422#151422: signal 17 (SIGCHLD) received from 151662
+2022/09/25 02:48:04 [error] 151729#151729: *5 open() "/usr/share/nginx/html/test/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /test/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:48:13 [error] 151731#151731: *6 open() "/usr/share/nginx/html/test/log.js" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /test/log.js HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:48:22 [notice] 151422#151422: signal 1 (SIGHUP) received from 151867, reconfiguring
+2022/09/25 02:48:22 [notice] 151422#151422: reconfiguring
+2022/09/25 02:48:22 [notice] 151422#151422: using the "epoll" event method
+2022/09/25 02:48:22 [notice] 151422#151422: start worker processes
+2022/09/25 02:48:22 [notice] 151422#151422: start worker process 151868
+2022/09/25 02:48:22 [notice] 151422#151422: start worker process 151869
+2022/09/25 02:48:22 [notice] 151422#151422: start worker process 151870
+2022/09/25 02:48:22 [notice] 151422#151422: start worker process 151871
+2022/09/25 02:48:22 [notice] 151730#151730: gracefully shutting down
+2022/09/25 02:48:22 [notice] 151729#151729: gracefully shutting down
+2022/09/25 02:48:22 [notice] 151729#151729: exiting
+2022/09/25 02:48:22 [notice] 151730#151730: exiting
+2022/09/25 02:48:22 [notice] 151729#151729: exit
+2022/09/25 02:48:22 [notice] 151730#151730: exit
+2022/09/25 02:48:22 [notice] 151732#151732: gracefully shutting down
+2022/09/25 02:48:22 [notice] 151732#151732: exiting
+2022/09/25 02:48:22 [notice] 151732#151732: exit
+2022/09/25 02:48:22 [notice] 151731#151731: gracefully shutting down
+2022/09/25 02:48:22 [notice] 151731#151731: exiting
+2022/09/25 02:48:22 [notice] 151731#151731: exit
+2022/09/25 02:48:22 [notice] 151422#151422: signal 17 (SIGCHLD) received from 151729
+2022/09/25 02:48:22 [notice] 151422#151422: worker process 151729 exited with code 0
+2022/09/25 02:48:22 [notice] 151422#151422: worker process 151730 exited with code 0
+2022/09/25 02:48:22 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:48:22 [notice] 151422#151422: signal 17 (SIGCHLD) received from 151731
+2022/09/25 02:48:22 [notice] 151422#151422: worker process 151731 exited with code 0
+2022/09/25 02:48:22 [notice] 151422#151422: worker process 151732 exited with code 0
+2022/09/25 02:48:22 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:48:25 [error] 151868#151868: *7 open() "/usr/share/nginx/html/log.js" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /log.js HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:48:36 [error] 151870#151870: *8 open() "/usr/share/nginx/html/log.js" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /log.js HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:49:05 [error] 151869#151869: *9 open() "/usr/share/nginx/html/log.js" failed (2: No such file or directory), client: 127.0.0.1, server: localhost, request: "GET /log.js HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:52:08 [notice] 151422#151422: signal 1 (SIGHUP) received from 152365, reconfiguring
+2022/09/25 02:52:08 [notice] 151422#151422: reconfiguring
+2022/09/25 02:52:08 [notice] 151422#151422: using the "epoll" event method
+2022/09/25 02:52:08 [notice] 151422#151422: start worker processes
+2022/09/25 02:52:08 [notice] 151422#151422: start worker process 152366
+2022/09/25 02:52:08 [notice] 151422#151422: start worker process 152367
+2022/09/25 02:52:08 [notice] 151422#151422: start worker process 152368
+2022/09/25 02:52:08 [notice] 151422#151422: start worker process 152369
+2022/09/25 02:52:08 [notice] 151870#151870: gracefully shutting down
+2022/09/25 02:52:08 [notice] 151868#151868: gracefully shutting down
+2022/09/25 02:52:08 [notice] 151869#151869: gracefully shutting down
+2022/09/25 02:52:08 [notice] 151870#151870: exiting
+2022/09/25 02:52:08 [notice] 151868#151868: exiting
+2022/09/25 02:52:08 [notice] 151869#151869: exiting
+2022/09/25 02:52:08 [notice] 151870#151870: exit
+2022/09/25 02:52:08 [notice] 151868#151868: exit
+2022/09/25 02:52:08 [notice] 151869#151869: exit
+2022/09/25 02:52:08 [notice] 151871#151871: gracefully shutting down
+2022/09/25 02:52:08 [notice] 151871#151871: exiting
+2022/09/25 02:52:08 [notice] 151871#151871: exit
+2022/09/25 02:52:08 [notice] 151422#151422: signal 17 (SIGCHLD) received from 151869
+2022/09/25 02:52:08 [notice] 151422#151422: worker process 151869 exited with code 0
+2022/09/25 02:52:08 [notice] 151422#151422: worker process 151871 exited with code 0
+2022/09/25 02:52:08 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:52:08 [notice] 151422#151422: signal 17 (SIGCHLD) received from 151871
+2022/09/25 02:52:08 [notice] 151422#151422: worker process 151868 exited with code 0
+2022/09/25 02:52:08 [notice] 151422#151422: worker process 151870 exited with code 0
+2022/09/25 02:52:08 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:52:10 [error] 152366#152366: *11 directory index of "/home/wx/ng-m/ng-config/domain/10/js/" is forbidden, client: 127.0.0.1, server: www.test123.com, request: "GET / HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:53:12 [error] 152366#152366: *15 open() "/home/wx/ng-m/ng-config/domain/10/docs/1234/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /1234/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:53:44 [notice] 151422#151422: signal 1 (SIGHUP) received from 153044, reconfiguring
+2022/09/25 02:53:44 [notice] 151422#151422: reconfiguring
+2022/09/25 02:53:44 [notice] 151422#151422: using the "epoll" event method
+2022/09/25 02:53:44 [notice] 151422#151422: start worker processes
+2022/09/25 02:53:44 [notice] 151422#151422: start worker process 153045
+2022/09/25 02:53:44 [notice] 151422#151422: start worker process 153046
+2022/09/25 02:53:44 [notice] 151422#151422: start worker process 153047
+2022/09/25 02:53:44 [notice] 151422#151422: start worker process 153048
+2022/09/25 02:53:44 [notice] 152368#152368: gracefully shutting down
+2022/09/25 02:53:44 [notice] 152366#152366: gracefully shutting down
+2022/09/25 02:53:44 [notice] 152367#152367: gracefully shutting down
+2022/09/25 02:53:44 [notice] 152368#152368: exiting
+2022/09/25 02:53:44 [notice] 152366#152366: exiting
+2022/09/25 02:53:44 [notice] 152367#152367: exiting
+2022/09/25 02:53:44 [notice] 152366#152366: exit
+2022/09/25 02:53:44 [notice] 152367#152367: exit
+2022/09/25 02:53:44 [notice] 152368#152368: exit
+2022/09/25 02:53:44 [notice] 152369#152369: gracefully shutting down
+2022/09/25 02:53:44 [notice] 152369#152369: exiting
+2022/09/25 02:53:44 [notice] 152369#152369: exit
+2022/09/25 02:53:44 [notice] 151422#151422: signal 17 (SIGCHLD) received from 152366
+2022/09/25 02:53:44 [notice] 151422#151422: worker process 152366 exited with code 0
+2022/09/25 02:53:44 [notice] 151422#151422: worker process 152367 exited with code 0
+2022/09/25 02:53:44 [notice] 151422#151422: worker process 152368 exited with code 0
+2022/09/25 02:53:44 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:53:44 [notice] 151422#151422: signal 17 (SIGCHLD) received from 152369
+2022/09/25 02:53:44 [notice] 151422#151422: worker process 152369 exited with code 0
+2022/09/25 02:53:44 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:53:57 [error] 153045#153045: *17 open() "/home/wx/ng-m/ng-config/domain/10/js/test/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:54:15 [error] 153047#153047: *18 open() "/home/wx/ng-m/ng-config/domain/10/js/js/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /js/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:54:23 [error] 153046#153046: *20 open() "/home/wx/ng-m/ng-config/domain/10/docs/1234/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /1234/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:54:51 [notice] 151422#151422: signal 1 (SIGHUP) received from 153262, reconfiguring
+2022/09/25 02:54:51 [notice] 151422#151422: reconfiguring
+2022/09/25 02:54:51 [notice] 151422#151422: using the "epoll" event method
+2022/09/25 02:54:51 [notice] 151422#151422: start worker processes
+2022/09/25 02:54:51 [notice] 151422#151422: start worker process 153263
+2022/09/25 02:54:51 [notice] 151422#151422: start worker process 153264
+2022/09/25 02:54:51 [notice] 151422#151422: start worker process 153265
+2022/09/25 02:54:51 [notice] 151422#151422: start worker process 153266
+2022/09/25 02:54:52 [notice] 153047#153047: gracefully shutting down
+2022/09/25 02:54:52 [notice] 153046#153046: gracefully shutting down
+2022/09/25 02:54:52 [notice] 153045#153045: gracefully shutting down
+2022/09/25 02:54:52 [notice] 153047#153047: exiting
+2022/09/25 02:54:52 [notice] 153046#153046: exiting
+2022/09/25 02:54:52 [notice] 153045#153045: exiting
+2022/09/25 02:54:52 [notice] 153047#153047: exit
+2022/09/25 02:54:52 [notice] 153046#153046: exit
+2022/09/25 02:54:52 [notice] 153048#153048: gracefully shutting down
+2022/09/25 02:54:52 [notice] 153048#153048: exiting
+2022/09/25 02:54:52 [notice] 153045#153045: exit
+2022/09/25 02:54:52 [notice] 153048#153048: exit
+2022/09/25 02:54:52 [notice] 151422#151422: signal 17 (SIGCHLD) received from 153048
+2022/09/25 02:54:52 [notice] 151422#151422: worker process 153045 exited with code 0
+2022/09/25 02:54:52 [notice] 151422#151422: worker process 153048 exited with code 0
+2022/09/25 02:54:52 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:54:52 [notice] 151422#151422: signal 17 (SIGCHLD) received from 153046
+2022/09/25 02:54:52 [notice] 151422#151422: worker process 153046 exited with code 0
+2022/09/25 02:54:52 [notice] 151422#151422: worker process 153047 exited with code 0
+2022/09/25 02:54:52 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:55:02 [error] 153263#153263: *21 open() "/home/wx/ng-m/ng-config/domain/10/docs/test/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:55:28 [notice] 151422#151422: signal 1 (SIGHUP) received from 153363, reconfiguring
+2022/09/25 02:55:28 [notice] 151422#151422: reconfiguring
+2022/09/25 02:55:28 [notice] 151422#151422: using the "epoll" event method
+2022/09/25 02:55:28 [notice] 151422#151422: start worker processes
+2022/09/25 02:55:28 [notice] 151422#151422: start worker process 153364
+2022/09/25 02:55:28 [notice] 151422#151422: start worker process 153365
+2022/09/25 02:55:28 [notice] 151422#151422: start worker process 153366
+2022/09/25 02:55:28 [notice] 151422#151422: start worker process 153367
+2022/09/25 02:55:28 [notice] 153264#153264: gracefully shutting down
+2022/09/25 02:55:28 [notice] 153263#153263: gracefully shutting down
+2022/09/25 02:55:28 [notice] 153264#153264: exiting
+2022/09/25 02:55:28 [notice] 153263#153263: exiting
+2022/09/25 02:55:28 [notice] 153264#153264: exit
+2022/09/25 02:55:28 [notice] 153263#153263: exit
+2022/09/25 02:55:28 [notice] 153266#153266: gracefully shutting down
+2022/09/25 02:55:28 [notice] 153266#153266: exiting
+2022/09/25 02:55:28 [notice] 153265#153265: gracefully shutting down
+2022/09/25 02:55:28 [notice] 153265#153265: exiting
+2022/09/25 02:55:28 [notice] 153266#153266: exit
+2022/09/25 02:55:28 [notice] 153265#153265: exit
+2022/09/25 02:55:28 [notice] 151422#151422: signal 17 (SIGCHLD) received from 153264
+2022/09/25 02:55:28 [notice] 151422#151422: worker process 153263 exited with code 0
+2022/09/25 02:55:28 [notice] 151422#151422: worker process 153264 exited with code 0
+2022/09/25 02:55:28 [notice] 151422#151422: worker process 153265 exited with code 0
+2022/09/25 02:55:28 [notice] 151422#151422: worker process 153266 exited with code 0
+2022/09/25 02:55:28 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:55:28 [notice] 151422#151422: signal 17 (SIGCHLD) received from 153266
+2022/09/25 02:55:30 [error] 153364#153364: *22 open() "/home/wx/ng-m/ng-config/domain/10/docs/test/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:56:25 [error] 153365#153365: *23 "/home/wx/ng-m/ng-config/domain/10/docs/test/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test/ HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:56:27 [error] 153366#153366: *24 open() "/home/wx/ng-m/ng-config/domain/10/docs/test" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:57:07 [error] 153367#153367: *25 open() "/home/wx/ng-m/ng-config/domain/10/docs/test" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:57:48 [notice] 151422#151422: signal 1 (SIGHUP) received from 153609, reconfiguring
+2022/09/25 02:57:48 [notice] 151422#151422: reconfiguring
+2022/09/25 02:57:48 [notice] 151422#151422: using the "epoll" event method
+2022/09/25 02:57:48 [notice] 151422#151422: start worker processes
+2022/09/25 02:57:48 [notice] 151422#151422: start worker process 153610
+2022/09/25 02:57:48 [notice] 151422#151422: start worker process 153611
+2022/09/25 02:57:48 [notice] 151422#151422: start worker process 153612
+2022/09/25 02:57:48 [notice] 151422#151422: start worker process 153613
+2022/09/25 02:57:48 [notice] 153365#153365: gracefully shutting down
+2022/09/25 02:57:48 [notice] 153364#153364: gracefully shutting down
+2022/09/25 02:57:48 [notice] 153365#153365: exiting
+2022/09/25 02:57:48 [notice] 153364#153364: exiting
+2022/09/25 02:57:48 [notice] 153365#153365: exit
+2022/09/25 02:57:48 [notice] 153364#153364: exit
+2022/09/25 02:57:48 [notice] 153367#153367: gracefully shutting down
+2022/09/25 02:57:48 [notice] 153366#153366: gracefully shutting down
+2022/09/25 02:57:48 [notice] 153367#153367: exiting
+2022/09/25 02:57:48 [notice] 153366#153366: exiting
+2022/09/25 02:57:48 [notice] 153367#153367: exit
+2022/09/25 02:57:48 [notice] 153366#153366: exit
+2022/09/25 02:57:48 [notice] 151422#151422: signal 17 (SIGCHLD) received from 153365
+2022/09/25 02:57:48 [notice] 151422#151422: worker process 153364 exited with code 0
+2022/09/25 02:57:48 [notice] 151422#151422: worker process 153365 exited with code 0
+2022/09/25 02:57:48 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:57:48 [notice] 151422#151422: signal 17 (SIGCHLD) received from 153367
+2022/09/25 02:57:48 [notice] 151422#151422: worker process 153366 exited with code 0
+2022/09/25 02:57:48 [notice] 151422#151422: worker process 153367 exited with code 0
+2022/09/25 02:57:48 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:58:21 [notice] 151422#151422: signal 1 (SIGHUP) received from 153886, reconfiguring
+2022/09/25 02:58:21 [notice] 151422#151422: reconfiguring
+2022/09/25 02:58:21 [notice] 151422#151422: using the "epoll" event method
+2022/09/25 02:58:21 [notice] 151422#151422: start worker processes
+2022/09/25 02:58:21 [notice] 151422#151422: start worker process 153887
+2022/09/25 02:58:21 [notice] 151422#151422: start worker process 153888
+2022/09/25 02:58:21 [notice] 151422#151422: start worker process 153889
+2022/09/25 02:58:21 [notice] 151422#151422: start worker process 153890
+2022/09/25 02:58:21 [notice] 153611#153611: gracefully shutting down
+2022/09/25 02:58:21 [notice] 153610#153610: gracefully shutting down
+2022/09/25 02:58:21 [notice] 153611#153611: exiting
+2022/09/25 02:58:21 [notice] 153610#153610: exiting
+2022/09/25 02:58:21 [notice] 153611#153611: exit
+2022/09/25 02:58:21 [notice] 153610#153610: exit
+2022/09/25 02:58:21 [notice] 153612#153612: gracefully shutting down
+2022/09/25 02:58:21 [notice] 153612#153612: exiting
+2022/09/25 02:58:21 [notice] 153613#153613: gracefully shutting down
+2022/09/25 02:58:21 [notice] 153613#153613: exiting
+2022/09/25 02:58:21 [notice] 153612#153612: exit
+2022/09/25 02:58:21 [notice] 153613#153613: exit
+2022/09/25 02:58:21 [notice] 151422#151422: signal 17 (SIGCHLD) received from 153610
+2022/09/25 02:58:21 [notice] 151422#151422: worker process 153610 exited with code 0
+2022/09/25 02:58:21 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:58:21 [notice] 151422#151422: signal 17 (SIGCHLD) received from 153611
+2022/09/25 02:58:21 [notice] 151422#151422: worker process 153611 exited with code 0
+2022/09/25 02:58:21 [notice] 151422#151422: worker process 153613 exited with code 0
+2022/09/25 02:58:21 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:58:21 [notice] 151422#151422: signal 17 (SIGCHLD) received from 153612
+2022/09/25 02:58:21 [notice] 151422#151422: worker process 153612 exited with code 0
+2022/09/25 02:58:21 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 02:58:23 [error] 153887#153887: *29 "/home/wx/ng-m/ng-config/domain/10/docs/test/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test/ HTTP/1.1", host: "www.test123.com"
+2022/09/25 02:58:28 [error] 153888#153888: *30 open() "/home/wx/ng-m/ng-config/domain/10/docs/test/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 03:00:19 [notice] 151422#151422: signal 1 (SIGHUP) received from 154002, reconfiguring
+2022/09/25 03:00:19 [notice] 151422#151422: reconfiguring
+2022/09/25 03:00:19 [notice] 151422#151422: using the "epoll" event method
+2022/09/25 03:00:19 [notice] 151422#151422: start worker processes
+2022/09/25 03:00:19 [notice] 151422#151422: start worker process 154003
+2022/09/25 03:00:19 [notice] 151422#151422: start worker process 154004
+2022/09/25 03:00:19 [notice] 151422#151422: start worker process 154005
+2022/09/25 03:00:19 [notice] 151422#151422: start worker process 154006
+2022/09/25 03:00:19 [notice] 153887#153887: gracefully shutting down
+2022/09/25 03:00:19 [notice] 153890#153890: gracefully shutting down
+2022/09/25 03:00:19 [notice] 153888#153888: gracefully shutting down
+2022/09/25 03:00:19 [notice] 153889#153889: gracefully shutting down
+2022/09/25 03:00:19 [notice] 153887#153887: exiting
+2022/09/25 03:00:19 [notice] 153890#153890: exiting
+2022/09/25 03:00:19 [notice] 153888#153888: exiting
+2022/09/25 03:00:19 [notice] 153889#153889: exiting
+2022/09/25 03:00:19 [notice] 153887#153887: exit
+2022/09/25 03:00:19 [notice] 153888#153888: exit
+2022/09/25 03:00:19 [notice] 153889#153889: exit
+2022/09/25 03:00:19 [notice] 153890#153890: exit
+2022/09/25 03:00:19 [notice] 151422#151422: signal 17 (SIGCHLD) received from 153889
+2022/09/25 03:00:19 [notice] 151422#151422: worker process 153888 exited with code 0
+2022/09/25 03:00:19 [notice] 151422#151422: worker process 153889 exited with code 0
+2022/09/25 03:00:19 [notice] 151422#151422: worker process 153890 exited with code 0
+2022/09/25 03:00:19 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 03:00:19 [notice] 151422#151422: signal 17 (SIGCHLD) received from 153888
+2022/09/25 03:00:19 [notice] 151422#151422: signal 17 (SIGCHLD) received from 153887
+2022/09/25 03:00:19 [notice] 151422#151422: worker process 153887 exited with code 0
+2022/09/25 03:00:19 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 03:00:21 [error] 154003#154003: *31 "/home/wx/ng-m/ng-config/domain/10/docs/test/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test/ HTTP/1.1", host: "www.test123.com"
+2022/09/25 03:00:23 [error] 154004#154004: *32 open() "/home/wx/ng-m/ng-config/domain/10/docs/test/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 03:00:27 [error] 154005#154005: *33 open() "/home/wx/ng-m/ng-config/domain/10/docs/test/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 03:00:42 [notice] 151422#151422: signal 1 (SIGHUP) received from 154120, reconfiguring
+2022/09/25 03:00:42 [notice] 151422#151422: reconfiguring
+2022/09/25 03:00:42 [notice] 151422#151422: using the "epoll" event method
+2022/09/25 03:00:42 [notice] 151422#151422: start worker processes
+2022/09/25 03:00:42 [notice] 151422#151422: start worker process 154121
+2022/09/25 03:00:42 [notice] 151422#151422: start worker process 154122
+2022/09/25 03:00:42 [notice] 151422#151422: start worker process 154123
+2022/09/25 03:00:42 [notice] 151422#151422: start worker process 154124
+2022/09/25 03:00:42 [notice] 154004#154004: gracefully shutting down
+2022/09/25 03:00:42 [notice] 154003#154003: gracefully shutting down
+2022/09/25 03:00:42 [notice] 154004#154004: exiting
+2022/09/25 03:00:42 [notice] 154003#154003: exiting
+2022/09/25 03:00:42 [notice] 154004#154004: exit
+2022/09/25 03:00:42 [notice] 154003#154003: exit
+2022/09/25 03:00:42 [notice] 154005#154005: gracefully shutting down
+2022/09/25 03:00:42 [notice] 154006#154006: gracefully shutting down
+2022/09/25 03:00:42 [notice] 154005#154005: exiting
+2022/09/25 03:00:42 [notice] 154006#154006: exiting
+2022/09/25 03:00:42 [notice] 154006#154006: exit
+2022/09/25 03:00:42 [notice] 154005#154005: exit
+2022/09/25 03:00:42 [notice] 151422#151422: signal 17 (SIGCHLD) received from 154006
+2022/09/25 03:00:42 [notice] 151422#151422: worker process 154003 exited with code 0
+2022/09/25 03:00:42 [notice] 151422#151422: worker process 154004 exited with code 0
+2022/09/25 03:00:42 [notice] 151422#151422: worker process 154005 exited with code 0
+2022/09/25 03:00:42 [notice] 151422#151422: worker process 154006 exited with code 0
+2022/09/25 03:00:42 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 03:00:44 [error] 154121#154121: *34 open() "/home/wx/ng-m/ng-config/domain/10/js/test/index.html" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test/index.html HTTP/1.1", host: "www.test123.com"
+2022/09/25 03:00:48 [error] 154123#154123: *35 open() "/home/wx/ng-m/ng-config/domain/10/js/test/log.js" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test/log.js HTTP/1.1", host: "www.test123.com"
+2022/09/25 03:00:59 [error] 154124#154124: *36 open() "/home/wx/ng-m/ng-config/domain/10/js/test/log.js" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test/log.js HTTP/1.1", host: "www.test123.com"
+2022/09/25 03:01:06 [notice] 151422#151422: signal 1 (SIGHUP) received from 154257, reconfiguring
+2022/09/25 03:01:06 [notice] 151422#151422: reconfiguring
+2022/09/25 03:01:06 [notice] 151422#151422: using the "epoll" event method
+2022/09/25 03:01:06 [notice] 151422#151422: start worker processes
+2022/09/25 03:01:06 [notice] 151422#151422: start worker process 154258
+2022/09/25 03:01:06 [notice] 151422#151422: start worker process 154259
+2022/09/25 03:01:06 [notice] 151422#151422: start worker process 154260
+2022/09/25 03:01:06 [notice] 151422#151422: start worker process 154261
+2022/09/25 03:01:07 [notice] 154122#154122: gracefully shutting down
+2022/09/25 03:01:07 [notice] 154121#154121: gracefully shutting down
+2022/09/25 03:01:07 [notice] 154122#154122: exiting
+2022/09/25 03:01:07 [notice] 154121#154121: exiting
+2022/09/25 03:01:07 [notice] 154122#154122: exit
+2022/09/25 03:01:07 [notice] 154121#154121: exit
+2022/09/25 03:01:07 [notice] 154123#154123: gracefully shutting down
+2022/09/25 03:01:07 [notice] 154123#154123: exiting
+2022/09/25 03:01:07 [notice] 154123#154123: exit
+2022/09/25 03:01:07 [notice] 154124#154124: gracefully shutting down
+2022/09/25 03:01:07 [notice] 154124#154124: exiting
+2022/09/25 03:01:07 [notice] 154124#154124: exit
+2022/09/25 03:01:07 [notice] 151422#151422: signal 17 (SIGCHLD) received from 154123
+2022/09/25 03:01:07 [notice] 151422#151422: worker process 154121 exited with code 0
+2022/09/25 03:01:07 [notice] 151422#151422: worker process 154122 exited with code 0
+2022/09/25 03:01:07 [notice] 151422#151422: worker process 154123 exited with code 0
+2022/09/25 03:01:07 [notice] 151422#151422: worker process 154124 exited with code 0
+2022/09/25 03:01:07 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 03:01:08 [error] 154258#154258: *37 open() "/home/wx/ng-m/ng-config/domain/10/js/test/log.js" failed (2: No such file or directory), client: 127.0.0.1, server: www.test123.com, request: "GET /test/log.js HTTP/1.1", host: "www.test123.com"
+2022/09/25 03:02:16 [notice] 151422#151422: signal 1 (SIGHUP) received from 154374, reconfiguring
+2022/09/25 03:02:16 [notice] 151422#151422: reconfiguring
+2022/09/25 03:02:16 [notice] 151422#151422: using the "epoll" event method
+2022/09/25 03:02:16 [notice] 151422#151422: start worker processes
+2022/09/25 03:02:16 [notice] 151422#151422: start worker process 154375
+2022/09/25 03:02:16 [notice] 151422#151422: start worker process 154376
+2022/09/25 03:02:16 [notice] 151422#151422: start worker process 154377
+2022/09/25 03:02:16 [notice] 151422#151422: start worker process 154378
+2022/09/25 03:02:17 [notice] 154259#154259: gracefully shutting down
+2022/09/25 03:02:17 [notice] 154258#154258: gracefully shutting down
+2022/09/25 03:02:17 [notice] 154259#154259: exiting
+2022/09/25 03:02:17 [notice] 154258#154258: exiting
+2022/09/25 03:02:17 [notice] 154258#154258: exit
+2022/09/25 03:02:17 [notice] 154259#154259: exit
+2022/09/25 03:02:17 [notice] 154261#154261: gracefully shutting down
+2022/09/25 03:02:17 [notice] 154260#154260: gracefully shutting down
+2022/09/25 03:02:17 [notice] 154261#154261: exiting
+2022/09/25 03:02:17 [notice] 154260#154260: exiting
+2022/09/25 03:02:17 [notice] 154260#154260: exit
+2022/09/25 03:02:17 [notice] 154261#154261: exit
+2022/09/25 03:02:17 [notice] 151422#151422: signal 17 (SIGCHLD) received from 154258
+2022/09/25 03:02:17 [notice] 151422#151422: worker process 154258 exited with code 0
+2022/09/25 03:02:17 [notice] 151422#151422: worker process 154260 exited with code 0
+2022/09/25 03:02:17 [notice] 151422#151422: worker process 154261 exited with code 0
+2022/09/25 03:02:17 [notice] 151422#151422: signal 29 (SIGIO) received
+2022/09/25 03:02:17 [notice] 151422#151422: signal 17 (SIGCHLD) received from 154261
+2022/09/25 03:02:17 [notice] 151422#151422: worker process 154259 exited with code 0
+2022/09/25 03:02:17 [notice] 151422#151422: signal 29 (SIGIO) received
