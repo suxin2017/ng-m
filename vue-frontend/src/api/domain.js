@@ -45,4 +45,13 @@ export async function getNginxConfig(params) {
   });
 }
 
+export async function getUserListByDomain(params) {
+  return await r.get("/domain/users", {
+    params,
+  });
+}
+
+export async function addUserToDomain(params) {
+  return await r.post("/domain/user/add", params);
+}
 // getNginxConfig();

@@ -10,7 +10,6 @@ require (
 	github.com/go-playground/validator/v10 v10.11.0
 	github.com/golang-jwt/jwt/v4 v4.4.2
 	github.com/gorilla/websocket v1.5.0
-	github.com/thoas/go-funk v0.9.2
 	gorm.io/driver/sqlite v1.3.6
 	gorm.io/gorm v1.23.8
 )

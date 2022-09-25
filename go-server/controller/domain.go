@@ -68,7 +68,7 @@ func GetDomainById(c *gin.Context) {
 	}
 }
 
-func AddDomainByUser(c *gin.Context) {
+func AddDomainByLoginUser(c *gin.Context) {
 	user, exist := c.Get("currentUser")
 	var addDomainByUserData models.Domain
 	if c.ShouldBind(&addDomainByUserData) == nil && exist {
@@ -79,6 +79,39 @@ func AddDomainByUser(c *gin.Context) {
 		c.Error(fmt.Errorf("参数解析错误或者用户不存在"))
 	}
 
+}
+
+type AddDomainToUserData struct {
+	DomainId uint `form:"domainId"`
+	UserId   uint `form:"userId"`
+}
+
+func AddDomainToUser(c *gin.Context) {
+	var addDomainToUserData AddDomainToUserData
+	if c.ShouldBind(&addDomainToUserData) == nil {
+		var targetDomain models.Domain
+		var targetUser models.User
+		models.DB.First(&targetDomain, addDomainToUserData.DomainId)
+		models.DB.First(&targetUser, addDomainToUserData.UserId)
+
+		if targetDomain.ID == 0 {
+			c.Error(fmt.Errorf("域名不存在"))
+			return
+		}
+		if targetUser.ID == 0 {
+			c.Error(fmt.Errorf("用户不存在"))
+			return
+		}
+		err := models.DB.Model(&targetDomain).Association("Users").Append(&targetUser)
+		if err != nil {
+			c.Error(fmt.Errorf("添加用户失败"))
+			log.Println(err)
+			return
+		}
+		c.JSON(200, utils.OkMessage())
+	} else {
+		c.Error(fmt.Errorf("参数解析错误"))
+	}
 }
 
 func addDomainByAddBody(c *gin.Context, addBody models.Domain, user *models.User) {
@@ -286,6 +319,33 @@ func GetNginxConfig(c *gin.Context) {
 		file.WriteString(nginxConfig)
 
 		c.JSON(200, utils.Ok(nginxConfig))
+
+	} else {
+		c.Error(fmt.Errorf("something is error"))
+		c.Abort()
+		return
+	}
+}
+
+func GetUserListByDomain(c *gin.Context) {
+
+	var params GetNginxConfigParam
+	if err := c.ShouldBind(&params); err == nil {
+		var targetDomain models.Domain
+		var userList []models.User
+
+		models.DB.First(&targetDomain, params.DomainId)
+
+		if targetDomain.ID == 0 {
+			c.Error(fmt.Errorf("domain isn't exist"))
+		}
+
+		models.DB.Model(&targetDomain).Association("Users").Find(&userList)
+
+		c.JSON(200, utils.Ok(gin.H{
+			"total": len(userList),
+			"data":  userList,
+		}))
 
 	} else {
 		c.Error(fmt.Errorf("something is error"))

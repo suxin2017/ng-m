@@ -70,6 +70,21 @@ func AddUser(c *gin.Context) {
 	c.Error(fmt.Errorf("绑定失败"))
 
 }
+func RemoveUser(c *gin.Context) {
+	var user models.User
+	if c.ShouldBind(&user) == nil {
+		if user.ID == 0 {
+			c.Error(fmt.Errorf("id不能为空"))
+			return
+		}
+		result := models.DB.Delete(&models.User{}, user.ID)
+		if result.RowsAffected > 0 {
+			c.JSON(200, utils.OkMessage())
+			return
+		}
+	}
+	c.Error(fmt.Errorf("操作失败"))
+}
 
 type DeleteUserBody struct {
 	Id uint `json:"id,omitempty"`

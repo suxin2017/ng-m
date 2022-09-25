@@ -36,7 +36,7 @@
               <el-descriptions-item label="路径">{{
                 detail.path
               }}</el-descriptions-item>
-              <el-descriptions-item label="matchRule">{{
+              <el-descriptions-item label="匹配规则">{{
                 detail.matchRule
               }}</el-descriptions-item>
               <el-descriptions-item label="创建时间">{{
@@ -45,6 +45,21 @@
               <el-descriptions-item label="更新时间">{{
                 formatDate(detail.updatedAt ?? 0)
               }}</el-descriptions-item>
+              <el-descriptions-item label="类型">{{
+                detail.type === 1 ? "静态资源" : "反向代理"
+              }}</el-descriptions-item>
+              <template v-if="detail.type === 1">
+                <el-descriptions-item label="匹配路径">{{
+                  detail.root
+                }}</el-descriptions-item>
+              </template>
+              <template v-else>
+                <el-descriptions-item label="服务地址"
+                  >http://{{ detail.serverHost }}:{{
+                    detail.serverPort
+                  }}</el-descriptions-item
+                >
+              </template>
             </el-descriptions>
             <keep-alive>
               <PathMapper v-if="collapseKeys.includes(detail.id)"></PathMapper>
