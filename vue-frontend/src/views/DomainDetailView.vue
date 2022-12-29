@@ -5,23 +5,23 @@
         <el-collapse-item title="域名详情" name="1">
           <el-descriptions :column="2">
             <el-descriptions-item label="域名">{{
-              detail.domain
-            }}</el-descriptions-item>
+    detail.domain
+}}</el-descriptions-item>
             <el-descriptions-item label="描述">{{
-              detail.desc
-            }}</el-descriptions-item>
+    detail.desc
+}}</el-descriptions-item>
             <el-descriptions-item label="创建人">{{
-              detail.createdUser?.name ?? detail.createdUser?.email
-            }}</el-descriptions-item>
+    detail.createdUser?.name ?? detail.createdUser?.email
+}}</el-descriptions-item>
             <el-descriptions-item label="更新人">{{
-              detail.updatedUser?.name ?? detail.updatedUser?.email
-            }}</el-descriptions-item>
+    detail.updatedUser?.name ?? detail.updatedUser?.email
+}}</el-descriptions-item>
             <el-descriptions-item label="创建时间">{{
-              formatDate(detail.createdAt ?? 0)
-            }}</el-descriptions-item>
+    formatDate(detail.createdAt ?? 0)
+}}</el-descriptions-item>
             <el-descriptions-item label="更新时间">{{
-              formatDate(detail.updatedAt ?? 0)
-            }}</el-descriptions-item>
+    formatDate(detail.updatedAt ?? 0)
+}}</el-descriptions-item>
           </el-descriptions>
         </el-collapse-item>
       </el-collapse>
@@ -29,12 +29,11 @@
     <el-col>
       <el-tabs v-model="activeName">
         <el-tab-pane label="路径映射" name="path"><domain-path /></el-tab-pane>
-        <el-tab-pane label="资源管理" name="resource"
-          ><resource></resource
-        ></el-tab-pane>
-        <el-tab-pane label="管理用户" name="auth"
-          ><manage-uesr></manage-uesr
-        ></el-tab-pane>
+        <el-tab-pane label="资源管理" name="resource">
+          <resource></resource>
+        </el-tab-pane>
+        <el-tab-pane label="管理用户" name="auth"><manage-uesr></manage-uesr></el-tab-pane>
+        <el-tab-pane label="Ng配置" name="ngConfig"><ng-config></ng-config></el-tab-pane>
       </el-tabs>
     </el-col>
   </el-row>
@@ -47,6 +46,7 @@ import { useRoute, useRouter } from "vue-router";
 import DomainPath from "@/components/domainDetail/DomainPath.vue";
 import Resource from "@/components/domainDetail/Resource.vue";
 import ManageUesr from "@/components/domainDetail/ManageUesr.vue";
+import NgConfig from "@/components/domainDetail/NgConfig.vue";
 const router = useRouter();
 const route = useRoute();
 const detail = reactive({});
@@ -74,4 +74,6 @@ onMounted(() => {
 });
 </script>
 
-<style></style>
+<style>
+
+</style>

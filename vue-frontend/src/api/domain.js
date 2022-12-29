@@ -45,6 +45,14 @@ export async function getNginxConfig(params) {
   });
 }
 
+export async function previewNginxConfig(domainId){
+  return await r.get("/domain/previewNginxConfig",{
+    params:{
+      domainId
+    }
+  })
+}
+
 export async function getUserListByDomain(params) {
   return await r.get("/domain/users", {
     params,

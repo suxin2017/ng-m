@@ -63,6 +63,7 @@ func setupRouter() *gin.Engine {
 
 	domainRouter.GET("/resource", controller.GetDomainResourcePath)
 	domainRouter.GET("/nginxConfig", controller.GetNginxConfig)
+	domainRouter.GET("/previewNginxConfig",controller.PreviewNginxConfig)
 	domainRouter.POST("/resource/upload", controller.
 		UplodaResourceToDomain)
 	locationRouter := domainRouter.Group("/path")

@@ -327,6 +327,27 @@ func GetNginxConfig(c *gin.Context) {
 	}
 }
 
+func PreviewNginxConfig(c *gin.Context) {
+	var params GetNginxConfigParam
+	if err := c.ShouldBind(&params); err == nil {
+		var targetDomain models.Domain
+
+		models.DB.Preload("Locations").First(&targetDomain, params.DomainId)
+		utils.DebugLog(targetDomain)
+		nginxConfig := models.GetNginxConfigFromLocationAndDomain(targetDomain.Locations, targetDomain)
+		fmt.Println(nginxConfig)
+
+		c.JSON(200, utils.Ok(gin.H{
+			"data": nginxConfig,
+		}))
+
+	} else {
+		c.Error(fmt.Errorf("something is error"))
+		c.Abort()
+		return
+	}
+}
+
 func GetUserListByDomain(c *gin.Context) {
 
 	var params GetNginxConfigParam
